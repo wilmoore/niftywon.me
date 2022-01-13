@@ -1,13 +1,12 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 
-import Tooltip from '@mui/material/Tooltip';
-
 import CameraFrontIcon from '@mui/icons-material/CameraFront';
 import HelpIcon from '@mui/icons-material/Help';
 import IconButton from '@mui/material/IconButton';
 import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import Tooltip from '@mui/material/Tooltip';
 
 const List = styled.ul`
   list-style-type: none;
@@ -43,7 +42,7 @@ export const Menu = ({ isPlaying, pausePlay, sideBarHandler }: MenuProps) => {
       </ListItem>
 
       <ListItem>
-        <Tooltip title="Version 0.0.1" placement="right" arrow>
+        <Tooltip title="Version 0.0.2" placement="right" arrow>
           <span>
             <IconButton aria-label="help" disabled={true}>
               <HelpIcon />
