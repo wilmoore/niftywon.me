@@ -9,10 +9,10 @@ import { UnicodeLogo } from './UnicodeLogo';
 export default function Card() {
   const code = '₩';
   const name = 'Wil (₩) Moore III';
-  // const song = 'https://main.v2.beatstars.com/stream?id=5870232&return=audio&timestamp=1640578239';
-  const song = 'https://cloudup.com/cAtzezeD_tk+'; // these days
-  // const song = 'https://main.v2.beatstars.com/stream?id=10112959&return=audio&timestamp=1641508736';
-  // const song = 'https://main.v2.beatstars.com/stream?id=510793&return=audio&timestamp=1641803281'
+  const song = '//main.v2.beatstars.com/stream?id=5870232&return=audio&timestamp=1640578239';
+  // const song = '//cloudup.com/cAtzezeD_tk+'; // these days
+  // const song = '//main.v2.beatstars.com/stream?id=10112959&return=audio&timestamp=1641508736';
+  // const song = '//main.v2.beatstars.com/stream?id=510793&return=audio&timestamp=1641803281'
 
   const [ isOpen, setIsOpen ] = useState(false);
   const [ page, setPage ] = useState('');
