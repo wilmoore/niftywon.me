@@ -34,7 +34,7 @@ export default function Card() {
     <CenteredSingleColumn>
       <UnicodeLogo code={code} play={play} song={song} />
       <NameTag name={name} />
-      <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={!play} />
+      <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={play} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
     </CenteredSingleColumn>
   );

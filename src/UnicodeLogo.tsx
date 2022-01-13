@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 export const UnicodeLogo = ({ code, play, song }: { code: string; play: boolean; song: string }) => {
   const [audio] = useState(new Audio(song));
+  audio.loop = true
 
   const logo = {
     letter: `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`,
@@ -11,7 +12,7 @@ export const UnicodeLogo = ({ code, play, song }: { code: string; play: boolean;
   const classNames = (play) ? 'spin' : '';
 
   useEffect(() => {
-    (play) ? (audio.loop = true) && audio.play() : audio.pause();
+    (play) ? audio.play() : audio.pause();
   }, [audio, play]);
 
   return (

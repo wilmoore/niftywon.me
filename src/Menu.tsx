@@ -26,7 +26,7 @@ interface MenuProps {
   sideBarHandler?: any;
 }
 
-export const Menu = ({ isPlaying, sideBarHandler, pausePlay }: MenuProps) => {
+export const Menu = ({ isPlaying, pausePlay, sideBarHandler }: MenuProps) => {
   return (
     <List>
       <ListItem>
@@ -38,7 +38,7 @@ export const Menu = ({ isPlaying, sideBarHandler, pausePlay }: MenuProps) => {
 
       <ListItem>
         <IconButton onClick={pausePlay} data-toggle="pauseplay" aria-label="pauseplay" disabled={false}>
-        { (isPlaying) ? <PlayCircleOutlineIcon /> : <PauseCircleOutlineIcon /> }
+        { (isPlaying) ? <PauseCircleOutlineIcon /> : <PlayCircleOutlineIcon /> }
         </IconButton>
       </ListItem>
 
