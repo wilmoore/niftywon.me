@@ -16,7 +16,7 @@ export default function Card() {
 
   const [ isOpen, setIsOpen ] = useState(false);
   const [ page, setPage ] = useState('');
-  const [ play, setPlay ] = useState(false);
+  const [ isPlaying, setIsPlaying ] = useState(false);
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -27,14 +27,14 @@ export default function Card() {
 
   const pausePlay = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    setPlay(!play);
+    setIsPlaying(!isPlaying);
   };
 
   return (
     <CenteredSingleColumn>
-      <UnicodeLogo code={code} play={play} song={song} />
+      <UnicodeLogo code={code} isPlaying={isPlaying} song={song} />
       <NameTag name={name} />
-      <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={play} />
+      <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={isPlaying} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
     </CenteredSingleColumn>
   );
