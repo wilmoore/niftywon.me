@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react';
 
-export const UnicodeLogo = ({ code, isPlaying, song }: { code: string; isPlaying: boolean; song: string }) => {
-  const [audio] = useState(new Audio(song));
+interface UnicodeLogoProps {
+  code: string;
+  isPlaying: boolean;
+  anthem: string;
+}
+
+export const UnicodeLogo = ({ code, isPlaying, anthem }: UnicodeLogoProps) => {
+  const [audio] = useState(new Audio(anthem));
   audio.loop = true;
   audio.autoplay = false;
   audio.muted = true;
@@ -15,14 +21,13 @@ export const UnicodeLogo = ({ code, isPlaying, song }: { code: string; isPlaying
 
   useEffect(() => {
     if (isPlaying) {
-      const promise = audio.play();
+      const promiseToPlay = audio.play();
 
-      if (promise !== undefined) {
-        promise.then(function() {
-          console.log('playing')
+      if (promiseToPlay !== undefined) {
+        promiseToPlay.then(() => {
           audio.muted = false;
-        }).catch(function(error) {
-          console.error(error)
+        }).catch((error) => {
+          console.error(`Unable to play media: ${error.message}`);
         });
       }
     } else {
