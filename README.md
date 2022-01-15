@@ -1,2 +1,2 @@
-# u20a9.niftywon.me
+# niftywon.me
 >⪼ Made with 💜 by realpolyglot.dev
