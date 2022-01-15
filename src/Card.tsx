@@ -1,4 +1,3 @@
-import { anthem } from './anthem';
 import { CenteredSingleColumn  } from './CenteredSingleColumn';
 import { code, symbol, name } from './id';
 import { Menu } from './Menu';
@@ -10,7 +9,6 @@ import { UnicodeLogo } from './UnicodeLogo';
 export const Card = () => {
   const [ isOpen, setIsOpen ] = useState(false);
   const [ page, setPage ] = useState('');
-  const [ isPlaying, setIsPlaying ] = useState(false);
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -19,16 +17,11 @@ export const Card = () => {
     setIsOpen(Boolean(sidebarPage?.length));
   };
 
-  const pausePlay = (event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    setIsPlaying(!isPlaying);
-  };
-
   return (
     <CenteredSingleColumn>
-      <UnicodeLogo code={code} symbol={symbol} isPlaying={isPlaying} anthem={anthem.Bezerk} />
+      <UnicodeLogo code={code} symbol={symbol} />
       <NameTag name={name} />
-      <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={isPlaying} />
+      <Menu sideBarHandler={sideBarHandler} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
     </CenteredSingleColumn>
   );

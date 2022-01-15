@@ -1,13 +1,10 @@
-import * as React from 'react';
-import styled from '@emotion/styled';
-
 import CameraFrontIcon from '@mui/icons-material/CameraFront';
 import HelpIcon from '@mui/icons-material/Help';
 import IconButton from '@mui/material/IconButton';
-import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
+// import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import styled from '@emotion/styled';
 import Tooltip from '@mui/material/Tooltip';
-
 import { Version } from './Version';
 
 const List = styled.ul`
@@ -22,12 +19,10 @@ const ListItem = styled.li`
 `
 
 interface MenuProps {
-  isPlaying: boolean;
-  pausePlay?: any;
   sideBarHandler?: any;
 }
 
-export const Menu = ({ isPlaying, pausePlay, sideBarHandler }: MenuProps) => {
+export const Menu = ({ sideBarHandler }: MenuProps) => {
   return (
     <List>
       <ListItem>
@@ -38,8 +33,8 @@ export const Menu = ({ isPlaying, pausePlay, sideBarHandler }: MenuProps) => {
 
 
       <ListItem>
-        <IconButton onClick={pausePlay} aria-label="pauseplay" disabled={false}>
-        { (isPlaying) ? <PauseCircleOutlineIcon /> : <PlayCircleOutlineIcon /> }
+        <IconButton aria-label="pauseplay" disabled={false}>
+          <PlayCircleOutlineIcon />
         </IconButton>
       </ListItem>
 

@@ -1,12 +1,11 @@
-import { Avatar, Divider, Drawer } from '@mui/material';
-import styled from '@emotion/styled';
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart';
+import styled from '@emotion/styled';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { Avatar, Divider, Drawer } from '@mui/material';
 
 const PictureFrame = styled.div`
   margin-left: 21%;

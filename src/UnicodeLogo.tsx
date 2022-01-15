@@ -1,41 +1,17 @@
-import { useEffect, useState } from 'react';
-
 interface UnicodeLogoProps {
   code: string;
   symbol: string;
-  isPlaying: boolean;
-  anthem: string;
 }
 
-export const UnicodeLogo = ({ code, symbol, isPlaying, anthem }: UnicodeLogoProps) => {
-  const [audio] = useState(new Audio(anthem));
-  audio.loop = true;
-  audio.autoplay = false;
-  audio.muted = true;
-
+export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
   const href = `https://unicode-table.com/en/${code}/`;
   const logo = {
     letter: `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`,
     qrcode: 'https://cloudup.com/cCHXfUjwBAL+',
   };
 
-  const classNames = (isPlaying) ? 'spin' : '';
-
-  useEffect(() => {
-    if (isPlaying) {
-      const promiseToPlay = audio.play();
-
-      if (promiseToPlay !== undefined) {
-        promiseToPlay.then(() => {
-          audio.muted = false;
-        }).catch((error) => {
-          console.error(`Unable to play media: ${error.message}`);
-        });
-      }
-    } else {
-      audio.pause();
-    }
-  }, [audio, isPlaying]);
+  // const classNames = (isPlaying) ? 'spin' : '';
+  const classNames = '';
 
   return (
     <>
