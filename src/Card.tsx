@@ -1,17 +1,13 @@
 import { anthem } from './anthem';
 import { CenteredSingleColumn  } from './CenteredSingleColumn';
+import { code, symbol, name } from './id';
 import { Menu } from './Menu';
 import { MouseEvent, useState } from 'react';
 import { NameTag } from './NameTag';
 import { SideBar } from './SideBar';
 import { UnicodeLogo } from './UnicodeLogo';
 
-export default function Card() {
-  const code = '20A9';
-  const escape = parseInt(code, 16);
-  const symbol = String.fromCodePoint(escape);
-  const name = `Wil (${symbol}) Moore III`;
-
+export const Card = () => {
   const [ isOpen, setIsOpen ] = useState(false);
   const [ page, setPage ] = useState('');
   const [ isPlaying, setIsPlaying ] = useState(false);
@@ -37,3 +33,5 @@ export default function Card() {
     </CenteredSingleColumn>
   );
 }
+
+export default Card;
