@@ -90,9 +90,9 @@ export const SidebarContact = () => {
 
 const Page = ({ page }: { page: string }) => {
   switch (page) {
-		case 'contact':
-			return <SidebarContact />;
-		default:
+    case 'contact':
+      return <SidebarContact />;
+    default:
       return <div>Page Not Found</div>;
 	}
 }

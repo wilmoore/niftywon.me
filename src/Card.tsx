@@ -15,8 +15,10 @@ const anthem = {
 };
 
 export default function Card() {
-  const code = '₩';
-  const name = 'Wil (₩) Moore III';
+  const code = '20A9';
+  const escape = parseInt(code, 16);
+  const symbol = String.fromCodePoint(escape);
+  const name = `Wil (${symbol}) Moore III`;
 
   const [ isOpen, setIsOpen ] = useState(false);
   const [ page, setPage ] = useState('');
@@ -36,7 +38,7 @@ export default function Card() {
 
   return (
     <CenteredSingleColumn>
-      <UnicodeLogo code={code} isPlaying={isPlaying} anthem={anthem.Gunna} />
+      <UnicodeLogo code={code} symbol={symbol} isPlaying={isPlaying} anthem={anthem.Gunna} />
       <NameTag name={name} />
       <Menu sideBarHandler={sideBarHandler} pausePlay={pausePlay} isPlaying={isPlaying} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
