@@ -24,7 +24,7 @@ const ListItem = styled.li`
 `
 
 const Container = styled.div`
-  width: 21em;
+  width: 24em;
   display: flex;
   justify-content: center;
   align-items: center;
