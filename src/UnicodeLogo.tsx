@@ -34,7 +34,7 @@ interface UnicodeLogoProps {
 export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
   const [classNames, setClassNames] = useState('');
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showPlayIcon, setShowPlayIcon] = useState(false);
+  const [showAudioIcon, setShowAudioIcon] = useState(false);
   const href = `https://unicode-table.com/en/${code}/`;
   const logo = {
     letter: `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`,
@@ -66,7 +66,7 @@ export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
     const logo = window.document.querySelector('#unicode-logo');
 
     const onMouseOver = (event: any) => {
-      setTimeout(() => setShowPlayIcon(!showPlayIcon), 300);
+      setTimeout(() => setShowAudioIcon(!showAudioIcon), 300);
     }
 
     logo?.addEventListener('mouseover', onMouseOver);
@@ -74,13 +74,13 @@ export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
     return () => {
       logo?.removeEventListener('mouseover', onMouseOver);
     };
-  }, [isPlaying, showPlayIcon]);
+  }, [showAudioIcon]);
 
   return (
     <>
       <audio id="audio-player" src={anthem.Bezerk} onPlay={onPlay} onPause={onPause} loop muted />
-      <PlayIcon onClick={playOrPause} id="play-icon" style={{ display: ( showPlayIcon && !isPlaying ) ? 'block' : 'none' }} />
-      <PauseIcon onClick={playOrPause} id="pause-icon" style={{ display: ( showPlayIcon && isPlaying ) ? 'block' : 'none' }} />
+      <PlayIcon onClick={playOrPause} id="play-icon" style={{ display: ( showAudioIcon && !isPlaying ) ? 'block' : 'none' }} />
+      <PauseIcon onClick={playOrPause} id="pause-icon" style={{ display: ( showAudioIcon && isPlaying ) ? 'block' : 'none' }} />
       <a href={href} target="_blank" rel="noopener noreferrer nofollow">
         <img id="unicode-logo" className={classNames} src={logo.letter} alt={symbol} />
       </a>
