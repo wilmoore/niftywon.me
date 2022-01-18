@@ -18,10 +18,7 @@ export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const href = `https://unicode-table.com/en/${code}/`;
-  const logo = {
-    letter: `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`,
-    qrcode: 'https://cloudup.com/cCHXfUjwBAL+',
-  };
+  const logo = `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`;
 
   const onPlayPause = (event: any) => {
     setImageClassNames((event.type === 'play') ? 'spin' : '');
@@ -32,7 +29,7 @@ export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
     <UnicodeLogoContainer>
       <WonAudioPlayer isPlaying={isPlaying} onPlayPause={onPlayPause} />
       <a href={href} target="_blank" rel="noopener noreferrer nofollow">
-        <img id="unicode-logo" className={imageClassNames} src={logo.letter} alt={symbol} />
+        <img id="unicode-logo" className={imageClassNames} src={logo} alt={symbol} />
       </a>
     </UnicodeLogoContainer>
   )
