@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import SchoolIcon from '@mui/icons-material/School';
 import styled from '@emotion/styled';
 import Tooltip from '@mui/material/Tooltip';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import { Version } from './Version';
 
 const List = styled.ul`
@@ -30,10 +31,15 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
         </IconButton>
       </ListItem>
 
-
       <ListItem>
         <IconButton aria-label="courses" disabled={true}>
           <SchoolIcon />
+        </IconButton>
+      </ListItem>
+
+      <ListItem>
+        <IconButton aria-label="jobs" disabled={true}>
+          <WorkOutlineIcon />
         </IconButton>
       </ListItem>
 
