@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from './Link'
 import { useState } from 'react'
 import { WonAudioPlayer } from './WonAudioPlayer'
 
@@ -19,18 +20,20 @@ export const UnicodeLogo = ({ code, symbol }: UnicodeLogoProps) => {
 
   const href = `https://unicode-table.com/en/${code}/`
   const logo = `https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.svg?${Date.now()}`
+  const isSpinning = (enable: boolean) => enable ? 'spin' : ''
 
   const onPlayPause = (event: any) => {
-    setImageClassNames((event.type === 'play') ? 'spin' : '')
-    setIsPlaying(event.type === 'play')
+    const isPlaying = (event.type === 'play')
+    setIsPlaying(isPlaying)
+    setImageClassNames(isSpinning(isPlaying))
   }
 
   return (
     <UnicodeLogoContainer>
       <WonAudioPlayer isPlaying={isPlaying} onPlayPause={onPlayPause} />
-      <a href={href} target='_blank' rel='noopener noreferrer nofollow'>
+      <Link href={href}>
         <img id='unicode-logo' className={imageClassNames} src={logo} alt={symbol} />
-      </a>
+      </Link>
     </UnicodeLogoContainer>
   )
 }
