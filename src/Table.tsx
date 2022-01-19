@@ -1,17 +1,17 @@
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
+import * as React from 'react'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableHead from '@mui/material/TableHead'
+import TableRow from '@mui/material/TableRow'
 
 interface Column {
-  id: 'name' | 'symbol' | 'unicode' | 'entity' | 'html' | 'block';
-  label: string;
-  minWidth?: number;
-  align?: 'right';
-  format?: (value: number) => string;
+  id: 'name' | 'symbol' | 'unicode' | 'entity' | 'html' | 'block'
+  label: string
+  minWidth?: number
+  align?: 'right'
+  format?: (value: number) => string
 }
 
 const columns: readonly Column[] = [
@@ -21,46 +21,46 @@ const columns: readonly Column[] = [
     id: 'unicode',
     label: 'Unicode',
     minWidth: 170,
-    align: 'right',
+    align: 'right'
   },
   {
     id: 'entity',
     label: 'Entity',
     minWidth: 170,
-    align: 'right',
+    align: 'right'
   },
   {
     id: 'html',
     label: 'HTML',
     minWidth: 170,
-    align: 'right',
+    align: 'right'
   },
   {
     id: 'block',
     label: 'Block',
     minWidth: 170,
-    align: 'right',
-  },
-];
+    align: 'right'
+  }
+]
 
 interface Data {
-  name: string;
-  symbol: string;
-  unicode: string;
-  entity: string;
-  html: string;
-  block: string;
+  name: string
+  symbol: string
+  unicode: string
+  entity: string
+  html: string
+  block: string
 }
 
-function createData(
+function createData (
   name: string,
   symbol: string,
   unicode: string,
   entity: string,
   html: string,
-  block: string,
+  block: string
 ): Data {
-  return { name, symbol, unicode, entity, html, block };
+  return { name, symbol, unicode, entity, html, block }
 }
 
 const rows = [
@@ -82,48 +82,48 @@ const rows = [
   createData('New Sheqel Sign', '₪', 'U+20AA', '', '&#8362;', 'Currency Symbols'),
   createData('Euro Sign', '€', 'U+20AC', '', '&#8364;', 'Currency Symbols'),
   createData('Tenge Sign', '₸', 'U+20B8', '', '&#8376;', 'Currency Symbols'),
-  createData('French Franc Sign', '₣', 'U+20A3', '', '&#8355;', 'Currency Symbols'),
-];
+  createData('French Franc Sign', '₣', 'U+20A3', '', '&#8355;', 'Currency Symbols')
+]
 
 export const StickyHeadTable = () => {
   return (
-      <TableContainer sx={{ maxHeight: '100%' }}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map((column) => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{ minWidth: column.minWidth }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows
-              .map((row) => {
-                return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={row.symbol}>
-                    {columns.map((column) => {
-                      const value = row[column.id];
-                      return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format && typeof value === 'number'
+    <TableContainer sx={{ maxHeight: '100%' }}>
+      <Table stickyHeader aria-label='sticky table'>
+        <TableHead>
+          <TableRow>
+            {columns.map((column) => (
+              <TableCell
+                key={column.id}
+                align={column.align}
+                style={{ minWidth: column.minWidth }}
+              >
+                {column.label}
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows
+            .map((row) => {
+              return (
+                <TableRow hover role='checkbox' tabIndex={-1} key={row.symbol}>
+                  {columns.map((column) => {
+                    const value = row[column.id]
+                    return (
+                      <TableCell key={column.id} align={column.align}>
+                        {(column.format != null) && typeof value === 'number'
                             ? column.format(value)
                             : value}
-                        </TableCell>
-                      );
-                    })}
-                  </TableRow>
-                );
-              })}
-          </TableBody>
-        </Table>
-      </TableContainer>
-  );
+                      </TableCell>
+                    )
+                  })}
+                </TableRow>
+              )
+            })}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  )
 }
 
-export default StickyHeadTable;
+export default StickyHeadTable

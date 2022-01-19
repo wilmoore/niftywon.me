@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 
 export const CenteredSingleColumn = styled.div`
   display: flex;
@@ -7,6 +7,6 @@ export const CenteredSingleColumn = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
-`;
+`
 
-export default CenteredSingleColumn;
+export default CenteredSingleColumn
