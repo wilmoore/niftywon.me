@@ -6,7 +6,7 @@ import { NameTag } from './NameTag'
 import { SideBar } from './SideBar'
 import { WonUnicoLogo } from './WonUnicoLogo'
 
-export const Card = () => {
+export const Main = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [page, setPage] = useState('')
 
@@ -27,4 +27,4 @@ export const Card = () => {
   )
 }
 
-export default Card
+export default Main
