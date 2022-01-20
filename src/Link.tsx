@@ -5,7 +5,7 @@ interface Props {
 
 export const Link = ({ children, href }: Props) => {
   return (
-    <a href={href} target='_blank' rel='noopener noreferrer nofollow'>
+    <a style={{ color: '#b33bb3', textDecoration: 'none' }} href={href} target='_blank' rel='noopener noreferrer nofollow'>
       {children}
     </a>
   )

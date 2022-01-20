@@ -10,6 +10,12 @@ import { Link } from './Link'
 
 const Contact = styled.div`
   padding-bottom: 3vh;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
 `
 
 const Name = styled.span`
@@ -109,11 +115,11 @@ export const SidebarContact = () => {
       </Contact>
 
       <Divider />
-        <div>Link 1</div>
+        <div><Link href="https://www.swanbitcoin.com/crypt0won">Swan Bitcoin</Link></div>
       <Divider />
-        <div>Link 2</div>
+        <div><Link href="https://www.gemini.com/share/4qqvnavfl">Gemini</Link></div>
       <Divider />
-        <div>Link 3</div>
+        <div><Link href="https://join.robinhood.com/wilberm-84791d/">Robinhood</Link></div>
       <Divider />
 
       <img src='/index.vcf.qrcode.png' alt='QrCode' />
