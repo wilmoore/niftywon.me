@@ -44,7 +44,7 @@ export const WonAudioPlayer = ({ isPlaying, onPlayPause }: Props) => {
 
   return (
     <>
-      <audio id='wonlogo-audio' src={anthem.Bezerk} onPlay={onPlayPause} onPause={onPlayPause} loop muted />
+      <audio id='wonlogo-audio' src={anthem.CHANEL} onPlay={onPlayPause} onPause={onPlayPause} loop muted />
       {(isPlaying)
         ? <PauseIcon onClick={audioControl} />
         : <PlayIcon onClick={audioControl} />}

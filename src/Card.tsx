@@ -4,7 +4,7 @@ import { Menu } from './Menu'
 import { MouseEvent, useState } from 'react'
 import { NameTag } from './NameTag'
 import { SideBar } from './SideBar'
-import { UnicodeLogo } from './UnicodeLogo'
+import { WonUnicoLogo } from './WonUnicoLogo'
 
 export const Card = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +19,7 @@ export const Card = () => {
 
   return (
     <CenteredSingleColumn>
-      <UnicodeLogo code={code} symbol={symbol} />
+      <WonUnicoLogo code={code} symbol={symbol} />
       <NameTag name={name} />
       <Menu sideBarHandler={sideBarHandler} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />

@@ -16,7 +16,7 @@ interface Props {
 
 const NOSPIN = ''
 
-export const UnicodeLogo = ({ code, symbol }: Props) => {
+export const WonUnicoLogo = ({ code, symbol }: Props) => {
   const [imageClassNames, setImageClassNames] = useState(NOSPIN)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -39,4 +39,4 @@ export const UnicodeLogo = ({ code, symbol }: Props) => {
   )
 }
 
-export default UnicodeLogo
+export default WonUnicoLogo
