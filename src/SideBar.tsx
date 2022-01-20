@@ -7,9 +7,23 @@ import styled from '@emotion/styled'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { Avatar, Divider, Drawer } from '@mui/material'
 
+const PersonalDetails = styled.div`
+  padding-bottom: 3vh;
+`
+
+const Name = styled.span`
+  display: block;
+  font-size: 2.1em;
+  padding-top: 3vh;
+`
+
+const Bio = styled.div`
+  padding-top: 1vh;
+`
+
 const PictureFrame = styled.div`
-  margin-left: 21%;
-  margin-top: 2em;
+  padding-top: 3vh;
+  margin-left: 27%;
 `
 
 const List = styled.ul`
@@ -40,11 +54,15 @@ interface SideBarProps {
 
 export const SidebarContact = () => {
   return (
-    <div>
+    <div className="h-card vcard">
+      <Name className="fn">Wil (₩) Moore III</Name>
+      <Bio className="note">CTO @PolyglotLLC</Bio>
+      <Bio className="note">... building fairly _nifty_ web3 & mobile apps, digital products, & websites 💜🌈🦄</Bio>
       <PictureFrame>
         <Avatar
-          alt='Wil (₩) Moore III'
-          src='https://cloudup.com/cb5aQgld8gO+'
+          alt="Wil (₩) Moore III"
+          className="photo"
+          src="https://cloudup.com/cb5aQgld8gO+"
           sx={{ width: 168, height: 168 }}
         />
       </PictureFrame>
@@ -81,8 +99,23 @@ export const SidebarContact = () => {
         </ListItem>
       </List>
 
-      <img src='https://cloudup.com/cCHXfUjwBAL+' alt='QrCode' />
+      <PersonalDetails>
+        <a className="email" href="mailto:sally@example.com">wil.moore@wilmoore.com</a>
+        <div className="tel">+1.303.944.4251</div>
+        <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
+      </PersonalDetails>
+
       <Divider />
+        <div>Link 1</div>
+      <Divider />
+        <div>Link 2</div>
+      <Divider />
+        <div>Link 3</div>
+      <Divider />
+
+      <img src='https://cloudup.com/cCHXfUjwBAL+' alt='QrCode' />
+
+      <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </div>
   )
 }
