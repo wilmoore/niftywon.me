@@ -33,7 +33,7 @@ export const WonUnicoLogo = ({ code, symbol }: Props) => {
     <ViewBox>
       <WonAudioPlayer isPlaying={isPlaying} onPlayPause={onPlayPause} />
       <Link href={href}>
-        <img id='unicode-logo' className={imageClassNames} src={logo} alt={symbol} />
+        <img id="unicode-logo" className={imageClassNames} src={logo} alt={symbol} />
       </Link>
     </ViewBox>
   )
