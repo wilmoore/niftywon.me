@@ -103,7 +103,7 @@ export const SidebarContact = () => {
       </List>
 
       <PersonalDetails>
-        <a className="email" href="mailto:wil.moore@wilmoore.com">wil.moore@realpolyglot.dev</a>
+        <a className="email" href="mailto:wil.moore@wilmoore.com">wil.moore@wilmoore.com</a>
         <div className="tel">+1.303.944.4251</div>
         <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
       </PersonalDetails>
