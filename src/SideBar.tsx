@@ -115,11 +115,13 @@ export const SidebarContact = () => {
       </Contact>
 
       <Divider />
-        <div><Link href="https://www.swanbitcoin.com/crypt0won">Swan Bitcoin</Link></div>
+        <div><Link href="https://www.swanbitcoin.com/crypt0won">$10 of free Bitcoin @ Swan</Link></div>
       <Divider />
-        <div><Link href="https://www.gemini.com/share/4qqvnavfl">Gemini</Link></div>
+        <div><Link href="https://www.gemini.com/share/4qqvnavfl">Get $10 of bitcoin after you buy or sell $100 @ Gemini</Link></div>
       <Divider />
-        <div><Link href="https://join.robinhood.com/wilberm-84791d/">Robinhood</Link></div>
+        <div><Link href="https://join.robinhood.com/wilberm-84791d/">Get a free stock @ Robinhood</Link></div>
+      <Divider />
+        <div><Link href="https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79">Get $5 @ Acorns</Link></div>
       <Divider />
 
       <img src='/index.vcf.qrcode.png' alt='QrCode' />
