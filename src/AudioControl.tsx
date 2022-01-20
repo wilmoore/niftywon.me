@@ -29,7 +29,7 @@ interface Props {
   onClick: any
 }
 
-export const PlayPauseIcon = ({ isPlaying, onClick }: Props) => {
+export const AudioControl = ({ isPlaying, onClick }: Props) => {
   return (
     <>
       {(isPlaying) ? <PauseIcon onClick={onClick} /> : <PlayIcon onClick={onClick} />}
@@ -37,4 +37,4 @@ export const PlayPauseIcon = ({ isPlaying, onClick }: Props) => {
   )
 }
 
-export default PlayPauseIcon
+export default AudioControl

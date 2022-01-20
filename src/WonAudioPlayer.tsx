@@ -1,5 +1,6 @@
 import { anthem } from './anthem'
-import { PlayPauseIcon } from './PlayPauseIcon'
+import { AudioControl } from './AudioControl'
+import { AudioElement } from './AudioElement'
 import { popz } from './popz'
 
 interface Props {
@@ -7,13 +8,16 @@ interface Props {
   onPlayPause: any
 }
 
+const ELEMENT_ID = 'audio-element-won'
+
 export const WonAudioPlayer = ({ isPlaying, onPlayPause }: Props) => {
-  const pop = popz('#wonlogo-audio')
+  const control = popz(`#${ELEMENT_ID}`)
+  const sources = anthem.CHANEL
 
   return (
     <>
-      <audio muted loop id="wonlogo-audio" onPlay={onPlayPause} onPause={onPlayPause} src={anthem.CHANEL} />
-      <PlayPauseIcon isPlaying={isPlaying} onClick={pop} />
+      <AudioElement id={ELEMENT_ID} onPlayPause={onPlayPause} sources={sources} />
+      <AudioControl isPlaying={isPlaying} onClick={control} />
     </>
   )
 }
