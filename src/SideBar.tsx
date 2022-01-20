@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import { Avatar, Divider, Drawer } from '@mui/material'
 import { Link } from './Link'
 
-const PersonalDetails = styled.div`
+const Contact = styled.div`
   padding-bottom: 3vh;
 `
 
@@ -58,7 +58,7 @@ export const SidebarContact = () => {
     <div className="h-card vcard">
       <Name className="fn">Wil (₩) Moore III</Name>
       <Bio className="note">
-        CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
+        Founder @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Bio>
       <Bio className="note">... building fairly _nifty_ web3 & mobile apps, digital products, & websites 💜🌈🦄</Bio>
       <PictureFrame>
@@ -102,11 +102,11 @@ export const SidebarContact = () => {
         </ListItem>
       </List>
 
-      <PersonalDetails>
+      <Contact>
         <a className="email" href="mailto:wil.moore@wilmoore.com">wil.moore@wilmoore.com</a>
         <div className="tel">+1.303.944.4251</div>
         <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
-      </PersonalDetails>
+      </Contact>
 
       <Divider />
         <div>Link 1</div>
@@ -116,7 +116,8 @@ export const SidebarContact = () => {
         <div>Link 3</div>
       <Divider />
 
-      <img src='https://cloudup.com/cCHXfUjwBAL+' alt='QrCode' />
+      <img src='/index.vcf.qrcode.png' alt='QrCode' />
+      <Divider />
 
       <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </div>
