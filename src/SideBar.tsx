@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
 import TwitterIcon from '@mui/icons-material/Twitter'
-import { Avatar, Divider, Drawer } from '@mui/material'
+import { Avatar, Drawer } from '@mui/material'
 import { Link } from './Link'
 import { Paper } from '@mui/material';
 
