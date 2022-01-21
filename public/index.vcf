@@ -4,8 +4,8 @@ KIND:individual
 N:Moore III;Wil;;;
 FN:Wil (₩) Moore III
 ORG:Polyglot, LLC
-TITLE:Founder
-ROLE:CTO
+TITLE:CTO
+ROLE:Founder
 X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/wilmoore
 X-SOCIALPROFILE;type=twitter:https://twitter.com/DevRealEngineer
 TEL;TYPE=work,voice;Mobile=uri:tel:+1-303-944-4251
@@ -14,7 +14,8 @@ EMAIL:wil.moore@wilmoore.com
 URL;TYPE=HOME:https\://wilmoore.com
 URL;TYPE=WORK:https\://realpolyglot.dev
 URL;TYPE=LINK:https://www.swanbitcoin.com/crypt0won
-URL;TYPE=LINK:https://www.gemini.com/share/4qqvnavfl
 URL;TYPE=LINK:https://join.robinhood.com/wilberm-84791d/
+URL;TYPE=LINK:https://www.gemini.com/share/4qqvnavfl
+URL;TYPE=LINK:https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79
 REV:20220120T211233Z
 END:VCARD

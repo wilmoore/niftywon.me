@@ -23,6 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "qrencode": "qrencode -m 9 -o ./public/index.vcf.qrcode.png < ./public/index.vcf",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

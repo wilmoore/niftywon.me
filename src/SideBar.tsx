@@ -7,11 +7,16 @@ import styled from '@emotion/styled'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { Avatar, Divider, Drawer } from '@mui/material'
 import { Link } from './Link'
+import { Paper } from '@mui/material';
 
-const LinksContainer = styled.div`
-  a {
-    color: #b33bb3;
-  }
+const Tree = styled(Paper)`
+  a { color: #b33bb3; }
+  height: 7vh;
+  margin-bottom: 3vh;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const ContactContainer = styled.div`
@@ -81,7 +86,7 @@ export const SidebarContact = () => {
     <ContactContainer className="h-card vcard">
       <Name className="fn">Wil (₩) Moore III</Name>
       <Title className="note">
-        Founder @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
+        CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Title>
       <Bio className="note">... building fairly _nifty_ web3 & mobile apps, digital products, & websites 💜🌈🦄</Bio>
       <PictureFrame>
@@ -131,20 +136,29 @@ export const SidebarContact = () => {
         <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
       </Contact>
 
-      <LinksContainer>
-        <Divider />
-          <div><Link href="https://www.swanbitcoin.com/crypt0won">Bitcoin</Link></div>
-        <Divider />
-          <div><Link href="https://www.gemini.com/share/4qqvnavfl">Get $10 of bitcoin after you buy or sell $100 @ Gemini</Link></div>
-        <Divider />
-          <div><Link href="https://join.robinhood.com/wilberm-84791d/">Get a free stock @ Robinhood</Link></div>
-        <Divider />
-          <div><Link href="https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79">Get $5 @ Acorns</Link></div>
-        <Divider />
+      <div>
+        <Tree elevation={3}>
+          <Link href="https://www.swanbitcoin.com/crypt0won">Accumulate Bitcoin with Swan ($10 free)</Link>
+        </Tree>
 
-        <img src='/index.vcf.qrcode.png' alt='QrCode' />
-        <Divider />
-      </LinksContainer>
+        <Tree elevation={3}>
+          <Link href="https://join.robinhood.com/wilberm-84791d">Get a free stock @ Robinhood</Link>
+        </Tree>
+
+        <Tree elevation={3}>
+          <Link href="https://www.gemini.com/share/4qqvnavfl">Get $10 of bitcoin after you buy or sell $100 @ Gemini</Link>
+        </Tree>
+
+        <Tree elevation={3}>
+          <Link href="https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79">Save & Invest with Acorns ($5 free)</Link>
+        </Tree>
+
+        <Tree elevation={3}>
+          <Link href="http://coinbase.com/join/moore_w3zv">Get $10 of Bitcoin @ Coinbase</Link>
+        </Tree>
+      </div>
+
+      <img src='/index.vcf.qrcode.png' alt='QrCode' />
 
       <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </ContactContainer>
