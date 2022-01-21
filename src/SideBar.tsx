@@ -10,7 +10,6 @@ import { Link } from './Link'
 import { Paper } from '@mui/material';
 
 const Tree = styled(Paper)`
-  a { color: #b33bb3; }
   height: 7vh;
   margin-bottom: 3vh;
   text-transform: uppercase;
@@ -20,7 +19,8 @@ const Tree = styled(Paper)`
 `
 
 const ContactContainer = styled.div`
-  a {
+  a { 
+    color: #35495D;
     text-decoration: none;
   }
 `
