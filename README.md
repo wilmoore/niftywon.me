@@ -15,3 +15,13 @@ ngrok http 3000
 curl -s https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png|base64|pbcopy
 date -u +"%Y%m%dT%H%M%SZ"
 ```
+
+## Resources
+- [ ] [Material Icons](https://mui.com/components/material-icons/?query=barber)
+
+## Curb
+- [ ] [Curb Your Buzzer Beater](https://www.youtube.com/watch?v=4H76pv2vwtY)
+- [ ] [ROCKETS at WARRIORS | FULL GAME HIGHLIGHTS | January 21, 2022](https://www.youtube.com/watch?v=pQf-urRISic)
+- [ ] [Portal](https://amyhoy.com/portal/)
+- [ ] [falsisign](https://gitlab.com/edouardklein/falsisign)
+- [ ] [The journey to a $1 million ARR SaaS without traditional VCs](https://www.scrapingbee.com/journey-to-one-million-arr/Bitcoin)
