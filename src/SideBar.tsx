@@ -47,6 +47,7 @@ const Title = styled.div`
 const Bio = styled.div`
   font-size: 0.9em;
   font-style: italic;
+  padding-top: 1vh;
 `
 
 const PictureFrame = styled.div`
