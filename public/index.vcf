@@ -1,12 +1,12 @@
 BEGIN:VCARD
 VERSION:4.0
 KIND:individual
-N:Moore III;Wil;;;
-FN:Wil (₩) Moore III
+N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Moore;Wil;(₩);Mr.;III
+FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Wil (₩) Moore III
 ORG:Polyglot, LLC
 TITLE:CTO
 ROLE:Founder
-NOTE:... building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄
+NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:... building fairly _nifty_ web3 & mobile apps, digital products, training, APIs & websites 💜🌈🦄.
 X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/wilmoore
 X-SOCIALPROFILE;type=twitter:https://twitter.com/DevRealEngineer
 TEL;TYPE=work,voice;Mobile=uri:tel:+1-303-944-4251
@@ -18,5 +18,5 @@ URL;TYPE=LINK;Swan Bitcoin:https://www.swanbitcoin.com/crypt0won
 URL;TYPE=LINK;Robinhood:https://join.robinhood.com/wilberm-84791d/
 URL;TYPE=LINK;Gemini:https://www.gemini.com/share/4qqvnavfl
 URL;TYPE=LINK;Acorns:https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79
-REV:20220120T211233Z
+REV:20220122T181258Z
 END:VCARD
