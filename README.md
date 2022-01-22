@@ -11,6 +11,7 @@ Website featuring centered logo audio player, a horizontal svg icon button menu,
 ```
 yarn start
 yarn qrencode
+ngrok http 3000
 curl -s https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png|base64|pbcopy
 date -u +"%Y%m%dT%H%M%SZ"
 ```

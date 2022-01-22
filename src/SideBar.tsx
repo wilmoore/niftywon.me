@@ -10,7 +10,7 @@ import { Link } from './Link'
 import { Paper } from '@mui/material';
 
 const Tree = styled(Paper)`
-  height: 7vh;
+  height: 10vh;
   margin-bottom: 3vh;
   text-transform: uppercase;
   display: flex;
@@ -88,7 +88,7 @@ export const SidebarContact = () => {
       <Title className="note">
         CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Title>
-      <Bio className="note">... building fairly _nifty_ web3 & mobile apps, digital products, & websites 💜🌈🦄</Bio>
+      <Bio className="note">... building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄</Bio>
       <PictureFrame>
         <Avatar
           alt="Wil (₩) Moore III"
