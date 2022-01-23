@@ -24,6 +24,7 @@
   },
   "scripts": {
     "qrencode": "qrencode -m 9 -o ./public/index.vcf.qrcode.png < ./public/index.vcf",
+    "tunnel": "ngrok http 3000",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

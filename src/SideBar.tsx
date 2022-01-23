@@ -161,7 +161,7 @@ export const SidebarContact = () => {
         </Tree>
       </div>
 
-      <img src='/index.vcf.qrcode.png' alt='QrCode' />
+      <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
 
       <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </ContactContainer>

@@ -7,6 +7,10 @@ ORG:Polyglot, LLC
 TITLE:CTO & Serial Tech Co-Founder
 ROLE:Software Craftsman
 NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:⪼ building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄.
+PHOTO;VALUE=URL;TYPE=PNG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png
+PHOTO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
+LOGO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
+LOGO;VALUE=URL;TYPE=PNG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png
 X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/wilmoore
 X-SOCIALPROFILE;type=twitter:https://twitter.com/DevRealEngineer
 TEL;TYPE=work,voice;Mobile=uri:tel:+1-303-944-4251
