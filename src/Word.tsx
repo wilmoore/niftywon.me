@@ -5,6 +5,7 @@ import { Link } from './Link'
 const Text = styled(Chip)`
   color: #b3b3b3;
   margin-top: 3vh;
+  cursor: pointer;
 `
 
 interface Props {
