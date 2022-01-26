@@ -6,7 +6,7 @@ import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
 import TodayIcon from '@mui/icons-material/Today';
 import TwitterIcon from '@mui/icons-material/Twitter'
-import { Avatar, Drawer, Paper } from '@mui/material'
+import { Avatar, Divider, Drawer, Paper } from '@mui/material'
 import { Link } from './Link'
 
 const Tree = styled(Paper)`
@@ -18,6 +18,7 @@ const Tree = styled(Paper)`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 3vw;
 `
 
 const ContactContainer = styled.div`
@@ -145,9 +146,10 @@ export const SidebarContact = () => {
         <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
       </Contact>
 
+      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
       <div>
         <Tree elevation={3}>
-          <Link href="https://www.swanbitcoin.com/crypt0won">Accumulate Bitcoin with Swan ($10 free)</Link>
+          <Link href="https://www.swanbitcoin.com/crypt0won">Accumulate Bitcoin with Swan <br />($10 free)</Link>
         </Tree>
 
         <Tree elevation={3}>
@@ -167,8 +169,10 @@ export const SidebarContact = () => {
         </Tree>
       </div>
 
+      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>
       <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
 
+      <Divider sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }} />
       <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </ContactContainer>
   )
