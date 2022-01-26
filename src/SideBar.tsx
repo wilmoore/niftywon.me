@@ -4,10 +4,10 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
+import TodayIcon from '@mui/icons-material/Today';
 import TwitterIcon from '@mui/icons-material/Twitter'
-import { Avatar, Drawer } from '@mui/material'
+import { Avatar, Drawer, Paper } from '@mui/material'
 import { Link } from './Link'
-import { Paper } from '@mui/material';
 
 const Tree = styled(Paper)`
   height: 10vh;
@@ -103,6 +103,12 @@ export const SidebarContact = () => {
 
       <List>
         <ListItem>
+          <IconButton href='https://calendly.com/wilmoore' target='_blank' rel='noopener noreferrer nofollow'>
+            <TodayIcon />
+          </IconButton>
+        </ListItem>
+
+        <ListItem>
           <IconButton href='https://github.com/wilmoore/' target='_blank' rel='noopener noreferrer nofollow'>
             <GitHubIcon />
           </IconButton>
@@ -121,14 +127,14 @@ export const SidebarContact = () => {
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://instagram.com/wm3v21/' target='_blank' rel='noopener noreferrer nofollow'>
-            <InstagramIcon />
+          <IconButton href='https://twitter.com/DevRealEngineer' target='_blank' rel='noopener noreferrer nofollow'>
+            <TwitterIcon />
           </IconButton>
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://twitter.com/DevRealEngineer' target='_blank' rel='noopener noreferrer nofollow'>
-            <TwitterIcon />
+          <IconButton href='https://instagram.com/wm3v21/' target='_blank' rel='noopener noreferrer nofollow'>
+            <InstagramIcon />
           </IconButton>
         </ListItem>
       </List>
