@@ -8,7 +8,6 @@ import { Version } from './Version'
 
 const List = styled.ul`
   list-style-type: none;
-  line-height: 3em;
   padding: 0;
 `
 

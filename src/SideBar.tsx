@@ -8,6 +8,7 @@ import TodayIcon from '@mui/icons-material/Today';
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { Avatar, Divider, Drawer, Paper } from '@mui/material'
 import { Link } from './Link'
+import { name } from './id'
 
 const Tree = styled(Paper)`
   height: 10vh;
@@ -21,19 +22,8 @@ const Tree = styled(Paper)`
   border-radius: 3vw;
 `
 
-const ContactContainer = styled.div`
-  a { 
-    color: #35495D;
-    text-decoration: none;
-  }
-`
 const Contact = styled.div`
   padding-bottom: 3vh;
-
-  a {
-    color: #000;
-    font-weight: bold;
-  }
 `
 
 const Name = styled.span`
@@ -87,16 +77,15 @@ interface SideBarProps {
 
 export const SidebarContact = () => {
   return (
-    <ContactContainer className="h-card vcard">
-      <Name className="fn">Wil (₩) Moore III</Name>
-      <Title className="note">
+    <div>
+      <Name>{name}</Name>
+      <Title>
         CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Title>
-      <Bio className="note">⪼ building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄.</Bio>
+      <Bio>⪼ building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄.</Bio>
       <PictureFrame>
         <Avatar
           alt="Wil (₩) Moore III"
-          className="photo"
           src="https://cloudup.com/cb5aQgld8gO+"
           sx={{ width: 168, height: 168 }}
         />
@@ -141,10 +130,13 @@ export const SidebarContact = () => {
       </List>
 
       <Contact>
-        <a className="email" href="mailto:wil.moore@wilmoore.com">wil.moore@wilmoore.com</a>
-        <div className="tel">+1.303.944.4251</div>
-        <div className="adr">1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
+        <Link href="mailto:wil.moore@wilmoore.com">wil.moore@wilmoore.com</Link>
+        <div>+1.303.944.4251</div>
+        <div>1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
       </Contact>
+
+      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>
+      <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
 
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
       <div>
@@ -169,12 +161,9 @@ export const SidebarContact = () => {
         </Tree>
       </div>
 
-      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>
-      <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
-
       <Divider sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }} />
       <div>⪼ Made with 💜 by realpolyglot.dev</div>
-    </ContactContainer>
+    </div>
   )
 }
 

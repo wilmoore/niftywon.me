@@ -1,3 +1,10 @@
+import styled from '@emotion/styled'
+
+const Ahref = styled.a`
+  color: #35495D;
+  text-decoration: none;
+`
+
 interface Props {
   children: React.ReactNode;
   href: string;
@@ -5,9 +12,9 @@ interface Props {
 
 export const Link = ({ children, href }: Props) => {
   return (
-    <a href={href} target='_blank' rel='noopener noreferrer nofollow'>
+    <Ahref href={href} target='_blank' rel='noopener noreferrer nofollow'>
       {children}
-    </a>
+    </Ahref>
   )
 }
 

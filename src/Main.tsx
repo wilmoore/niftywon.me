@@ -1,10 +1,11 @@
 import { CenteredSingleColumn } from './CenteredSingleColumn'
-import { code, symbol, name } from './id'
+import { code, symbol } from './id'
 import { Menu } from './Menu'
 import { MouseEvent, useState } from 'react'
-import { NameTag } from './NameTag'
 import { SideBar } from './SideBar'
+import { verse } from './verse'
 import { WonUnicoLogo } from './WonUnicoLogo'
+import { Word } from './Word'
 
 export const Main = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +21,7 @@ export const Main = () => {
   return (
     <CenteredSingleColumn>
       <WonUnicoLogo code={code} symbol={symbol} />
-      <NameTag name={name} />
+      <Word verse={verse} />
       <Menu sideBarHandler={sideBarHandler} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
     </CenteredSingleColumn>
