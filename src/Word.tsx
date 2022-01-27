@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Chip } from '@mui/material'
-import { Link } from './Link'
 import { href, verse } from './verse'
+import { Link } from './Link'
 
 const Text = styled(Chip)`
   color: #b3b3b3;
