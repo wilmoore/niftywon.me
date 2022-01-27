@@ -3,7 +3,6 @@ import { code, symbol } from './id'
 import { Menu } from './Menu'
 import { MouseEvent, useState } from 'react'
 import { SideBar } from './SideBar'
-import { verse } from './verse'
 import { WonUnicoLogo } from './WonUnicoLogo'
 import { Word } from './Word'
 
@@ -21,7 +20,7 @@ export const Main = () => {
   return (
     <CenteredSingleColumn>
       <WonUnicoLogo code={code} symbol={symbol} />
-      <Word verse={verse} />
+      <Word />
       <Menu sideBarHandler={sideBarHandler} />
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} page={page} />
     </CenteredSingleColumn>
