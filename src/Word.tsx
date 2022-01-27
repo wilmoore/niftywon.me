@@ -13,7 +13,7 @@ export const Word = () => {
   return (
     <Link href={href}>
       <Text label={verse} />
-      </Link>
+    </Link>
   )
 }
 
