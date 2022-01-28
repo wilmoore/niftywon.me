@@ -4,9 +4,10 @@ KIND:individual
 N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Moore;Wil;(₩);Mr.;III
 FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Wil (₩) Moore III
 ORG:Polyglot, LLC
-TITLE:CTO & Serial Tech Co-Founder
-ROLE:Software Craftsman
-NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:⪼ building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄.
+TITLE:CTO
+ROLE:Serial Tech Co-Founder
+NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:⩭⪼ Building fairly _nifty_ web(3), api & appz. Need a tech co-founder to build your mvp or demo? 🤙🏾💜🌈🦄.
+NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Proverbs 3:1-26 NLT
 PHOTO;VALUE=URL;TYPE=PNG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png
 PHOTO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
 LOGO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
@@ -18,6 +19,7 @@ ADR;TYPE=work;Main="1317 Edgewater Dr, Suite 3326\nOrlando, FL 32804\nUnited Sta
 EMAIL:wil.moore@wilmoore.com
 URL;TYPE=HOME;website:https\://wilmoore.com
 URL;TYPE=WORK;Polyglot, LLC:https\://realpolyglot.dev
+URL;TYPE=LINK;Book a Session:https://calendly.com/wilmoore
 URL;TYPE=LINK;Swan Bitcoin:https://www.swanbitcoin.com/crypt0won
 URL;TYPE=LINK;Robinhood:https://join.robinhood.com/wilberm-84791d/
 URL;TYPE=LINK;Gemini:https://www.gemini.com/share/4qqvnavfl
