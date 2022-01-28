@@ -82,7 +82,8 @@ export const SidebarContact = () => {
       <Title>
         CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Title>
-      <Bio>⪼ building fairly _nifty_ web3 & mobile apps, digital products, training, developer experience, APIs & websites 💜🌈🦄.</Bio>
+      <Bio>⩭⪼ Building fairly _nifty_ web(3), api & appz. A tech co-founder to build your mvp or demo ... book a session 🤙🏾💜🌈🦄.
+</Bio>
       <PictureFrame>
         <Avatar
           alt="Wil (₩) Moore III"
