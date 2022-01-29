@@ -56,7 +56,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   display: inline;
-  padding: 0.5em;
+  padding: 0.3em;
 `
 
 const Container = styled.div`
@@ -110,7 +110,7 @@ export const SidebarContact = () => {
             <LinkedInIcon />
           </IconButton>
         </ListItem>
-
+         
         <ListItem>
           <IconButton href='https://stackoverflow.com/users/128346/wil-moore-iii?tab=profile' target='_blank' rel='noopener noreferrer nofollow'>
             <StackedBarChartIcon />
@@ -159,6 +159,10 @@ export const SidebarContact = () => {
 
         <Tree elevation={3}>
           <Link href="http://coinbase.com/join/moore_w3zv">Get $10 of Bitcoin @ Coinbase</Link>
+        </Tree>
+
+        <Tree elevation={3}>
+          <Link href=" https://git.io/fhhRI">Resume</Link>
         </Tree>
       </div>
 
