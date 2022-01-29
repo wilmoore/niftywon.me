@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Chip } from '@mui/material'
-import { href, verse } from './verse'
+import { href, ref } from './bible'
 import { Link } from './Link'
 
 const Text = styled(Chip)`
@@ -12,7 +12,7 @@ const Text = styled(Chip)`
 export const Word = () => {
   return (
     <Link href={href}>
-      <Text label={verse} />
+      <Text label={ref} />
     </Link>
   )
 }
