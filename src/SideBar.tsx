@@ -8,7 +8,7 @@ import TodayIcon from '@mui/icons-material/Today';
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { Avatar, Divider, Drawer, Paper } from '@mui/material'
 import { Link } from './Link'
-import { name } from './id'
+import { address, bio, email, name, phone, photo } from './id'
 
 const Tree = styled(Paper)`
   height: 10vh;
@@ -82,12 +82,11 @@ export const SidebarContact = () => {
       <Title>
         CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
       </Title>
-      <Bio>⩭⪼ Building fairly _nifty_ web(3), api & appz. A tech co-founder to build your mvp or demo ... book a session 🤙🏾💜🌈🦄.
-</Bio>
+      <Bio>{bio}</Bio>
       <PictureFrame>
         <Avatar
-          alt="Wil (₩) Moore III"
-          src="https://cloudup.com/cb5aQgld8gO+"
+          alt={name}
+          src={photo}
           sx={{ width: 168, height: 168 }}
         />
       </PictureFrame>
@@ -131,9 +130,9 @@ export const SidebarContact = () => {
       </List>
 
       <Contact>
-        <Link href="mailto:wil.moore@wilmoore.com">wil.moore@wilmoore.com</Link>
-        <div>+1.303.944.4251</div>
-        <div>1317 Edgewater Dr, Suite 3326, Orlando FL 32804</div>
+        <Link href={`mailto:${email}`}>{email}</Link>
+        <div>{phone}</div>
+        <div>{address}</div>
       </Contact>
 
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>

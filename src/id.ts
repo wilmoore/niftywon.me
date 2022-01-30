@@ -11,3 +11,7 @@ export const verse = 'Proverbs 3:1-26 NLT'
 export const company = 'Polyglot, LLC'
 export const title = 'CTO'
 export const role = 'Serial Tech Co-Founder'
+export const email = 'wil.moore@wilmoore.com'
+export const phone = '+1.303.944.4251'
+export const address = '1317 Edgewater Dr, Suite 3326, Orlando FL 32804'
+
