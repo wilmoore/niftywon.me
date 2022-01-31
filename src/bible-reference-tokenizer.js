@@ -1,10 +1,9 @@
 const { books } = require('./books')
-const { translations } = require('./bible')
+const { translations } = require('./translations')
 
 const TOKEN_TYPES = [
   ['BOOK', /\b/.source + `(${books().join('|')})` + /\b/.source],
   ['PASSAGE', /(\b([\d]+[\d:-]*)\b)/i],
-  // ['TRANSLATION', /\b(AMP|NLT|NKJV|NIV)\b/i],
   ['TRANSLATION', /\b/.source + `(${translations().join('|')})` + /\b/.source],
 ]
 
