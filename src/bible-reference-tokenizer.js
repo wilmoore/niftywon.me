@@ -1,11 +1,16 @@
+const { books } = require('./books')
+const { translations } = require('./bible')
+
 const TOKEN_TYPES = [
-  ['BOOK', /\b(song of solomon|song of songs|psalms|proverbs)\b/i],
+  ['BOOK', /\b/.source + `(${books().join('|')})` + /\b/.source],
   ['PASSAGE', /(\b([\d]+[\d:-]*)\b)/i],
-  ['TRANSLATION', /\b(NLT|NKJV|NIV)\b/i],
+  // ['TRANSLATION', /\b(AMP|NLT|NKJV|NIV)\b/i],
+  ['TRANSLATION', /\b/.source + `(${translations().join('|')})` + /\b/.source],
 ]
 
 export const tokenizer = (source) => {
   let reference = source
+  let tokens = []
 
   TOKEN_TYPES.forEach((tokenType, iteration) => {
     const [type, rule] = tokenType
@@ -16,7 +21,9 @@ export const tokenizer = (source) => {
       let value = matched[1]
       reference = reference.slice(value.length).trim()
       let token = { type, value }
-      console.log({ token, reference})
+      tokens.push(token)
     }
   })
+
+  return tokens
 }

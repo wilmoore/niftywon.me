@@ -1,6 +1,12 @@
 import { tokenizer } from './bible-reference-tokenizer'
+import { bookup } from './books'
+import { lookup } from './translations'
+import { ref } from './id'
+export { ref } from './id'
 
-export const ref = 'Proverbs 3:21-26 NLT'
-export const href = 'https://www.bible.com/bible/116/PRO.3.21-26.NLT'
+const tokens = tokenizer(ref)
+const book = (tokens.find(( token ) => { return token.type === 'BOOK' }))?.value || 'Genesis'
+const passage = (tokens.find(( token ) => { return token.type === 'PASSAGE' }))?.value || '1:1'
+const translation = (tokens.find(( token ) => { return token.type === 'TRANSLATION' }))?.value || 'NLT'
 
-tokenizer(ref)
+export const href = `//bible.com/bible/${lookup(translation)}/${bookup(book)}.${passage.replace(':', '.')}.${translation}`
