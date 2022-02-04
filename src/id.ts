@@ -1,5 +1,5 @@
 export const address = '1317 Edgewater Dr, Suite 3326, Orlando FL 32804'
-export const bio = 'Technical Accountability Partner for Startup Founders (Mentorship Available)! {Book a Session} 🤙🏾💜🌈🦄.'
+export const bio = 'Technical Accountability Partner for Startup Founders (Mentorship Available)! 🤙🏾💜🌈🦄.'
 export const book_a_session = '//calendly.com/wilmoore'
 export const code = '20A9'
 export const company = 'Polyglot, LLC'

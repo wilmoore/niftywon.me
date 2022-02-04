@@ -7,8 +7,10 @@ import { WonUnicoLogo } from './WonUnicoLogo'
 import { Word } from './Word'
 
 export const Main = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [page, setPage] = useState('')
+  const hash = window.location.hash
+  const action = hash.length ? hash.slice(1).toLowerCase() : ''
+  const [isOpen, setIsOpen] = useState(action === 'contact')
+  const [page, setPage] = useState(action)
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
