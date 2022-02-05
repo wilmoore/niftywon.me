@@ -75,7 +75,7 @@ interface SideBarProps {
   page: string
 };
 
-export const SidebarContact = () => {
+export const SidebarVcard = () => {
   return (
     <div>
       <Name>{name}</Name>
@@ -173,8 +173,8 @@ export const SidebarContact = () => {
 
 const Page = ({ page }: { page: string }) => {
   switch (page) {
-    case 'contact':
-      return <SidebarContact />
+    case 'vcard':
+      return <SidebarVcard />
     default:
       return <div>Page Not Found</div>
   }

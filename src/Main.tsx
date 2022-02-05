@@ -6,11 +6,23 @@ import { SideBar } from './SideBar'
 import { WonUnicoLogo } from './WonUnicoLogo'
 import { Word } from './Word'
 
+const openTo = () => {
+  const { hash } = window.location
+
+  if (hash.length) {
+    const hashValue = hash.slice(1).toLowerCase()
+
+    return (hashValue === 'vcard')
+      ? hashValue
+      : ''
+  }
+
+  return ''
+}
+
 export const Main = () => {
-  const hash = window.location.hash
-  const action = hash.length ? hash.slice(1).toLowerCase() : ''
-  const [isOpen, setIsOpen] = useState(action === 'contact')
-  const [page, setPage] = useState(action)
+  const [isOpen, setIsOpen] = useState(openTo().length)
+  const [page, setPage] = useState(openTo())
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()

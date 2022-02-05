@@ -24,7 +24,7 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
   return (
     <List>
       <ListItem>
-        <IconButton onClick={sideBarHandler} data-sidebar-page='contact' aria-label='contact' disabled={false}>
+        <IconButton onClick={sideBarHandler} data-sidebar-page='vcard' aria-label='vcard' disabled={false}>
           <CameraFrontIcon />
         </IconButton>
       </ListItem>
