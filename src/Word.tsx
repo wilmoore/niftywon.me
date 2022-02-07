@@ -4,7 +4,7 @@ import { href, ref } from './bible'
 import { Link } from './Link'
 
 const Text = styled(Chip)`
-  color: #b3b3b3;
+  color: #CAB6A2;
   margin-top: 3vh;
   cursor: pointer;
 `

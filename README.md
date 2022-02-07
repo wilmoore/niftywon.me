@@ -7,6 +7,10 @@ Website featuring centered logo audio player, a horizontal svg icon button menu,
 - [ ] `contact` for activating the left sidebar contact sheet.
 - [ ] `courses` for activating the left sidebar courses sheet. (not yet implemented)
 
+## Colors
+- [ ] [Dark Vanilla](https://www.color-name.com/hex/cab6a2)
+- [ ] [Charcoal](https://www.color-name.com/hex/35495d)
+
 ## Build Commands
 ```
 yarn start
