@@ -1,23 +1,23 @@
-const { books } = require('./books')
-const { translations } = require('./translations')
+const books = require('./books.json')
+const translations = require('./translations.json')
 
 const TOKEN_TYPES = [
-  ['BOOK', /\b/.source + `(${books().join('|')})` + /\b/.source],
+  ['BOOK', /\b/.source + `(${Object.keys(books).join('|')})` + /\b/.source],
   ['PASSAGE', /(\b([\d]+[\d:-]*)\b)/i],
-  ['TRANSLATION', /\b/.source + `(${translations().join('|')})` + /\b/.source],
+  ['TRANSLATION', /\b/.source + `(${Object.keys(translations).join('|')})` + /\b/.source],
 ]
 
-export const parser = (tokens) => {
-  const book = (tokens.find(( token ) => token.type === 'BOOK' ))?.value || 'Genesis'
-  const passage = (tokens.find(( token ) => token.type === 'PASSAGE' ))?.value || '1:1'
-  const translation = (tokens.find(( token ) => token.type === 'TRANSLATION' ))?.value || 'NLT'
+export const parser = (tokens: any) => {
+  const book = (tokens.find((token: any) => token.type === 'BOOK' ))?.value || 'Genesis'
+  const passage = (tokens.find((token: any) => token.type === 'PASSAGE' ))?.value || '1:1'
+  const translation = (tokens.find((token: any) => token.type === 'TRANSLATION' ))?.value || 'NLT'
 
   return { book, passage, translation }
 }
 
-export const tokenizer = (source) => {
+export const tokenizer = (source: string) => {
   let reference = source
-  let tokens = []
+  let tokens: {[key: string]: string | RegExp}[] = []
 
   TOKEN_TYPES.forEach((tokenType, iteration) => {
     const [type, rule] = tokenType
