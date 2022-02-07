@@ -17,7 +17,7 @@ export const parser = (tokens: any) => {
 
 export const tokenizer = (source: string) => {
   let reference = source
-  let tokens: {[key: string]: string | RegExp}[] = []
+  let tokens: {[key: string]: string}[] = []
 
   TOKEN_TYPES.forEach((tokenType, iteration) => {
     const [type, rule] = tokenType
