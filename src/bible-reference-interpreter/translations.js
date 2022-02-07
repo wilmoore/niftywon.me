@@ -1,4 +1,4 @@
-const index: { [key: string]: string } = () => ({
+export const index: { [key: string]: string } = () => ({
   'AMP'  : 1588,
   'NBG'  : 328,
   'NKJV' : 114,
