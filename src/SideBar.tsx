@@ -2,6 +2,15 @@ import styled from '@emotion/styled'
 import { Drawer } from '@mui/material'
 import { Vcard } from './SideBar/Vcard'
 
+const Page = ({ page }: { page: string }) => {
+  switch (page) {
+    case 'vcard':
+      return <Vcard />
+    default:
+      return <div>Page Not Found</div>
+  }
+}
+
 const Container = styled.div`
   width: 24em;
   display: flex;
@@ -17,15 +26,6 @@ interface SideBarProps {
   setIsOpen: any
   page: string
 };
-
-const Page = ({ page }: { page: string }) => {
-  switch (page) {
-    case 'vcard':
-      return <Vcard />
-    default:
-      return <div>Page Not Found</div>
-  }
-}
 
 export const SideBar = ({ isOpen, setIsOpen, page }: SideBarProps) => {
   const side = 'left'
