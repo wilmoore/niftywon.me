@@ -1,10 +1,10 @@
-const books = require('./books.json')
-const translations = require('./translations.json')
+import * as books from './books'
+import * as translations from './translations'
 
 const TOKEN_TYPES = [
-  ['BOOK', /\b/.source + `(${Object.keys(books).join('|')})` + /\b/.source],
+  ['BOOK', /\b/.source + `(${books.list()})` + /\b/.source],
   ['PASSAGE', /(\b([\d]+[\d:-]*)\b)/i],
-  ['TRANSLATION', /\b/.source + `(${Object.keys(translations).join('|')})` + /\b/.source],
+  ['TRANSLATION', /\b/.source + `(${translations.list()})` + /\b/.source],
 ]
 
 export const parser = (tokens: any) => {

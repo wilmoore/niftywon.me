@@ -1,4 +1,4 @@
-export const index: { [key: string]: string } = () => ({
+const index: { [key: string]: string } = () => ({
  'Genesis'         :'GEN',
  'Exodus'          :'EXO',
  'Leviticus'       :'LEV',
@@ -68,8 +68,6 @@ export const index: { [key: string]: string } = () => ({
  'Revelation'      :'REV',
 })
 
-export const bookup = (book) => index()[book]
-
-export const books = () => Object.keys(index())
-
-export default books
+export const find = (book) => index()[book]
+export const keys = () => Object.keys(index())
+export const list = () => keys().join('|')

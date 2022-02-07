@@ -1,4 +1,4 @@
-export const index: { [key: string]: string } = () => ({
+const index: { [key: string]: string } = () => ({
   'AMP'  : 1588,
   'NBG'  : 328,
   'NKJV' : 114,
@@ -7,8 +7,6 @@ export const index: { [key: string]: string } = () => ({
   'TB'   : 306,
 })
 
-export const lookup = (key) => index()[key]
-
-export const translations = () => Object.keys(index())
-
-export default translations
+export const find = (key) => index()[key]
+export const keys = () => Object.keys(index())
+export const list = () => keys().join('|')
