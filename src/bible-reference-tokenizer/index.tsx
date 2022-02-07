@@ -7,6 +7,14 @@ const TOKEN_TYPES = [
   ['TRANSLATION', /\b/.source + `(${translations().join('|')})` + /\b/.source],
 ]
 
+export const parser = (tokens) => {
+  const book = (tokens.find(( token ) => token.type === 'BOOK' ))?.value || 'Genesis'
+  const passage = (tokens.find(( token ) => token.type === 'PASSAGE' ))?.value || '1:1'
+  const translation = (tokens.find(( token ) => token.type === 'TRANSLATION' ))?.value || 'NLT'
+
+  return { book, passage, translation }
+}
+
 export const tokenizer = (source) => {
   let reference = source
   let tokens = []
