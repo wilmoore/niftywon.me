@@ -1,6 +1,6 @@
-import { tokenizer, parser } from './bible-reference-tokenizer'
-import { bookup } from './bible-reference-tokenizer/books'
-import { lookup } from './bible-reference-tokenizer/translations'
+import { tokenizer, parser } from './bible-reference-interpreter'
+import { bookup } from './bible-reference-interpreter/books'
+import { lookup } from './bible-reference-interpreter/translations'
 
 export const url = (ref: string) => {
   const tokens = tokenizer(ref)
