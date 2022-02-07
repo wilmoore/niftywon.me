@@ -71,3 +71,5 @@ export const index: { [key: string]: string } = () => ({
 export const bookup = (book) => index()[book]
 
 export const books = () => Object.keys(index())
+
+export default books
