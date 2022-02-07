@@ -1,4 +1,4 @@
-import { CenteredSingleColumn } from './CenteredSingleColumn'
+import { CenteredSingleColumn } from './layout/CenteredSingleColumn'
 import { code, symbol } from './id'
 import { Menu } from './Menu'
 import { MouseEvent, useState } from 'react'

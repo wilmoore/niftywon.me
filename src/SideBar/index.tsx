@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Drawer } from '@mui/material'
-import { Vcard } from './SideBar/Vcard'
+import { Vcard } from './Vcard'
 
 const Page = ({ page }: { page: string }) => {
   switch (page) {
