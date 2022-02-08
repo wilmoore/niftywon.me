@@ -6,10 +6,9 @@ export const url = (ref: string) => {
   const tokens = tokenizer(ref)
   const { book, passage, translation } = parser(tokens)
 
-  const tId = translations[translation]
-  const bId = books[book]
+  const tId = translations.find(translation)
+  const bId = books.find(book)
   const pId = passage.replace(':', '.')
-  const path = `${tId}/${bId}.${pId}.${translation}`
 
-  return `//bible.com/bible/${path}`
+  return `//bible.com/bible/${tId}/${bId}.${pId}.${translation}`
 }
