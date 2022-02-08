@@ -21,7 +21,7 @@ const openTo = () => {
 }
 
 export const Main = () => {
-  const [isOpen, setIsOpen] = useState(openTo().length)
+  const [isOpen, setIsOpen] = useState(Boolean(openTo().length))
   const [page, setPage] = useState(openTo())
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
