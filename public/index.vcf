@@ -11,8 +11,9 @@ PHOTO;VALUE=URL;TYPE=PNG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/
 PHOTO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
 LOGO;VALUE=URL;TYPE=JPEG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.jpg
 LOGO;VALUE=URL;TYPE=PNG:https://raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png
-X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/wilmoore
-X-SOCIALPROFILE;type=twitter:https://twitter.com/DevRealEngineer
+X-SOCIALPROFILE;type=linkedin;x-user=wilmoore:https://www.linkedin.com/in/wilmoore
+X-SOCIALPROFILE;type=twitter;x-user=DevRealEngineer:https://twitter.com/DevRealEngineer
+X-SOCIALPROFILE;type=Instagram;x-user=wm3v21:https://instagram.com/wm3v21/
 TEL;TYPE=work,voice;Mobile=uri:tel:+1-303-944-4251
 ADR;TYPE=work;Main="1317 Edgewater Dr, Suite 3326\nOrlando, FL 32804\nUnited States of America":;;1317 Edgewater Dr, Suite 3326;Orlando; FL 32804;United States of America
 EMAIL:wil.moore@wilmoore.com
