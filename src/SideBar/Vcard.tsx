@@ -120,7 +120,10 @@ export const Vcard = () => {
       </Contact>
 
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>
-      <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
+
+      <Link href="/index.vcf">
+        <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
+      </Link>
 
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
       <div>
