@@ -23,7 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "qrencode": "qrencode -o ./public/index.vcf.qrcode.png -m 9 `sed '/^PHOTO:/d' ./public/index.vcf`",
+    "qrencode": "sed '/^PHOTO/d' ./public/index.vcf | qrencode -m 9 -o ./public/index.vcf.qrcode.png",
     "tunnel": "ngrok http 3000",
     "start": "react-scripts start",
     "build": "react-scripts build",
