@@ -24,7 +24,7 @@ date -u +"%Y%m%dT%H%M%SZ"
 - [ ] [Material Icons](https://mui.com/components/material-icons/?query=barber)
 
 ## Curb
-- [ ] [Curb Your Buzzer Beater](https://www.youtube.com/watch?v=4H76pv2vwtY)
+- [ ] [Curb Your Buzzer Beater](https://youtu.be/4H76pv2vwtY?t=183)
 - [ ] [ROCKETS at WARRIORS | FULL GAME HIGHLIGHTS | January 21, 2022](https://www.youtube.com/watch?v=pQf-urRISic)
 - [ ] [Portal](https://amyhoy.com/portal/)
 - [ ] [falsisign](https://gitlab.com/edouardklein/falsisign)
