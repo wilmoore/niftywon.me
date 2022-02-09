@@ -101,7 +101,7 @@ export const Vcard = () => {
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://twitter.com/DevRealEngineer' target='_blank' rel='noopener noreferrer nofollow'>
+          <IconButton href='https://twitter.com/intent/follow?screen_name=DevRealEngineer' target='_blank' rel='noopener noreferrer nofollow'>
             <TwitterIcon />
           </IconButton>
         </ListItem>
