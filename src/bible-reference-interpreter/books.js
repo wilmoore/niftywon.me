@@ -48,6 +48,7 @@ export const index: { [key: string]: string } = () => ({
  '1 Corinthians'   :'1CO',
  '2 Corinthians'   :'2CO',
  'Galatians'       :'GAL',
+ 'Galations'       :'GAL',
  'Ephesians'       :'EPH',
  'Philippians'     :'PHP',
  'Colossians'      :'COL',
