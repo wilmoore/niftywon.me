@@ -128,23 +128,7 @@ export const Vcard = () => {
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
       <div>
         <Tree elevation={3}>
-          <Link href="https://www.swanbitcoin.com/crypt0won">Accumulate Bitcoin with Swan <br />($10 free)</Link>
-        </Tree>
-
-        <Tree elevation={3}>
-          <Link href="https://join.robinhood.com/wilberm-84791d">Get a free stock @ Robinhood</Link>
-        </Tree>
-
-        <Tree elevation={3}>
-          <Link href="https://www.gemini.com/share/4qqvnavfl">Get $10 of bitcoin after you buy or sell $100 @ Gemini</Link>
-        </Tree>
-
-        <Tree elevation={3}>
-          <Link href="https://share.acorns.com/zones/friend_landing_experience_microsite?extole_share_channel=SHARE_LINK&extole_shareable_code=7Q3J79">Save & Invest with Acorns ($5 free)</Link>
-        </Tree>
-
-        <Tree elevation={3}>
-          <Link href="http://coinbase.com/join/moore_w3zv">Get $10 of Bitcoin @ Coinbase</Link>
+          <Link href="https://www.getrevue.co/profile/devrealengineer">The Harsh Truth Newsletter :: Software Developer Interviews</Link>
         </Tree>
 
         <Tree elevation={3}>
