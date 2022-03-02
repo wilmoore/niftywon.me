@@ -107,7 +107,7 @@ export const Vcard = () => {
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://instagram.com/wm3v21/' target='_blank' rel='noopener noreferrer nofollow'>
+          <IconButton href='https://www.instagram.com/wcodesmoore/' target='_blank' rel='noopener noreferrer nofollow'>
             <InstagramIcon />
           </IconButton>
         </ListItem>
