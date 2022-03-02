@@ -128,10 +128,6 @@ export const Vcard = () => {
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
       <div>
         <Tree elevation={3}>
-          <Link href="https://www.getrevue.co/profile/devrealengineer">The Harsh Truth Newsletter :: Software Developer Interviews</Link>
-        </Tree>
-
-        <Tree elevation={3}>
           <Link href=" https://git.io/fhhRI">Resume</Link>
         </Tree>
       </div>
