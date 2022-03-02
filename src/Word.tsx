@@ -11,9 +11,11 @@ const Text = styled(Chip)`
 `
 
 export const Word = () => {
+  const id = Math.floor(Math.random() * (ref.length - 0) + 0)
+
   return (
-    <Link href={url(ref)}>
-      <Text label={ref} />
+    <Link href={url(ref[id])}>
+      <Text label={ref[id]} />
     </Link>
   )
 }
