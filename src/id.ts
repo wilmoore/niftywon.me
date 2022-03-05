@@ -11,6 +11,7 @@ export const name = `Wil (${id}) Moore III`
 export const phone = '+1.303.944.4251'
 export const photo = '//cldup.com/SU6cLiLWM0.jpg'
 export const ref = [
+  'Isaiah 2:4',
   'Genesis 2:1-3 NLT',
   '1 Peter 4:10 NLT',
   'Ephesians 5:19',
