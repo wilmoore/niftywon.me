@@ -12,6 +12,16 @@ export const phone = '+1.303.944.4251'
 export const photo = '//cldup.com/SU6cLiLWM0.jpg'
 export const ref = [
   'Isaiah 2:4',
+  '1 Kings 20:18',
+  'Psalms 120:7',
+  'Jeremiah 4:21 NLT',
+  'Deuteronomy 23:9 NLT',
+  'Job 5:20 NLT',
+  'Ecclesiastes 9:18 NLT',
+  'James 4:1 NLT',
+  'Psalms 46:9 NLT',
+  'Psalms 55:21 NLT',
+  'Isaiah 8:10 NLT',
 ]
 // export const ref = [
 //   'Isaiah 2:4',
