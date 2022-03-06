@@ -18,6 +18,7 @@ export const index: { [key: string]: string } = () => ({
  'Esther'          :'EST',
  'Job'             :'JOB',
  'Psalm'           :'PSA',
+ 'Psalms'          :'PSA',
  'Proverbs'        :'PRO',
  'Ecclesiastes'    :'ECC',
  'Song of Solomon' :'SNG',
