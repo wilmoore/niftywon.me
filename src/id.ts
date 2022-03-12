@@ -10,7 +10,9 @@ export const logo = '//raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index
 export const name = `Wil (${id}) Moore III`
 export const phone = '+1.303.944.4251'
 export const photo = '//cldup.com/SU6cLiLWM0.jpg'
+
 export const ref = [
+  'John 14:6',
   'Isaiah 2:4',
   '1 Kings 20:18',
   'Psalms 120:7',
@@ -23,6 +25,7 @@ export const ref = [
   'Psalms 55:21 NLT',
   'Isaiah 8:10 NLT',
 ]
+
 // export const ref = [
 //   'Isaiah 2:4',
 //   'Genesis 2:1-3 NLT',
@@ -34,6 +37,7 @@ export const ref = [
 //   'Romans 13:1–7',
 //   'Acts 5:29',
 // ]
+
 export const role = 'CTO'
 export const symbol = String.fromCodePoint(escape)
 export const title = 'Tech Mentor'
