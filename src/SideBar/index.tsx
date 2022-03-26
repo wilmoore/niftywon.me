@@ -1,11 +1,14 @@
 import styled from '@emotion/styled'
 import { Drawer } from '@mui/material'
 import { Vcard } from './Vcard'
+import { WorkHistory } from './WorkHistory'
 
 const Page = ({ page }: { page: string }) => {
   switch (page) {
     case 'vcard':
       return <Vcard />
+    case 'workhistory':
+      return <WorkHistory />
     default:
       return <div>Page Not Found</div>
   }

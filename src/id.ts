@@ -24,6 +24,11 @@ export const ref = [
   'Psalms 46:9 NLT',
   'Psalms 55:21 NLT',
   'Isaiah 8:10 NLT',
+  'Proverbs 21:19',
+  'Proverbs 27:15-16',
+  'Proverbs 25:24',
+  'Proverbs 14:1',
+  'Proverbs 11:22',
 ]
 
 // export const ref = [

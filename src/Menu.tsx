@@ -1,7 +1,7 @@
 import CameraFrontIcon from '@mui/icons-material/CameraFront'
 import HelpIcon from '@mui/icons-material/Help'
 import IconButton from '@mui/material/IconButton'
-import SchoolIcon from '@mui/icons-material/School'
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import styled from '@emotion/styled'
 import Tooltip from '@mui/material/Tooltip'
 import { Version } from './Version'
@@ -30,8 +30,8 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
       </ListItem>
 
       <ListItem>
-        <IconButton onClick={sideBarHandler} data-sidebar-page='courses' aria-label='courses' disabled={true}>
-          <SchoolIcon />
+        <IconButton onClick={sideBarHandler} data-sidebar-page='workhistory' aria-label='workhistory' disabled={false}>
+          <WorkHistoryIcon />
         </IconButton>
       </ListItem>
 
