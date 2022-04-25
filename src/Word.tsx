@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 import { Chip } from '@mui/material'
-import { url } from './bible-url'
-import { ref } from './id'
 import { Link } from './Link'
+import { ref } from './id'
+import { url } from './bible-url'
+import { useMemo } from 'react'
 
 const Text = styled(Chip)`
   color: #CAB6A2;
@@ -11,7 +12,7 @@ const Text = styled(Chip)`
 `
 
 export const Word = () => {
-  const id = Math.floor(Math.random() * (ref.length - 0) + 0)
+  const id = useMemo(() => Math.floor(Math.random() * (ref.length - 0) + 0), [])
 
   return (
     <Link href={url(ref[id])}>

@@ -1,9 +1,10 @@
 export const index: { [key: string]: string } = () => ({
   'AMP'  : 1588,
+  'ESV'  : 59,
   'NBG'  : 328,
+  'NIV'  : 111,
   'NKJV' : 114,
   'NLT'  : 116,
-  'NIV'  : 111,
   'TB'   : 306,
 })
 
