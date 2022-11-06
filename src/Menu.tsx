@@ -28,13 +28,14 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
           <CameraFrontIcon />
         </IconButton>
       </ListItem>
-
+  {/*
       <ListItem>
         <IconButton onClick={sideBarHandler} data-sidebar-page='workhistory' aria-label='workhistory' disabled={false}>
           <WorkHistoryIcon />
         </IconButton>
       </ListItem>
-
+  */}
+  {/*
       <ListItem>
         <Tooltip title={'v' + Version} placement='right' arrow>
           <span>
@@ -44,6 +45,7 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
           </span>
         </Tooltip>
       </ListItem>
+*/}
     </List>
   )
 }

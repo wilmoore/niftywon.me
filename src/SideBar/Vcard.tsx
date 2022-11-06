@@ -1,14 +1,19 @@
+import * as React from 'react';
+ 
 import GitHubIcon from '@mui/icons-material/GitHub'
 import IconButton from '@mui/material/IconButton'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
-import TodayIcon from '@mui/icons-material/Today';
-import TwitterIcon from '@mui/icons-material/Twitter'
-import { address, bio, email, name, phone, photo } from '../id'
-import { Avatar, Divider, Paper } from '@mui/material'
+import TodayIcon from '@mui/icons-material/Today'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { address, bio, email, name, phone, photo, role } from '../id'
+import { Avatar, Dialog, DialogTitle, Divider, Paper, Slide } from '@mui/material'
 import { Link } from '../Link'
+
+import { TransitionProps } from '@mui/material/transitions';
+import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 
 const Tree = styled(Paper)`
   height: 10vh;
@@ -59,12 +64,46 @@ const ListItem = styled.li`
   padding: 0.3em;
 `
 
+
+const Transition = React.forwardRef(function Transition(
+  props: TransitionProps & {
+    children: React.ReactElement<any, any>;
+  },
+  ref: React.Ref<unknown>,
+) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 export const Vcard = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div>
+
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogTitle sx={{ margin: 'auto' }}>{"Scan To Save Contact To Phone"}</DialogTitle>
+        <Link href="/index.vcf">
+          <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px', padding: '1.25em' }} alt='QrCode' />
+        </Link>
+      </Dialog>
+
       <Name>{name}</Name>
       <Title>
-        CTO @ <Link href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?quitButtonDestination=BusinessEntityResults&nameTyp=ENT&masterFileId=20198007190&entityId2=20198007190&fileId=20198007190&srchTyp=ENTITY&joisuurunjbrzhtqilvqlnw65a=z23bgttikjeprpsriz6hcqoyca">Polyglot, LLC</Link>
+        {role} @ <Link href="https://search.sunbiz.org/Inquiry/CorporationSearch/ConvertTiffToPDF?storagePath=COR%5C2022%5C1101%5C60890336.tif&documentNumber=L22000466252">WinnersOnly, LLC</Link>
       </Title>
       <Bio>{bio}</Bio>
       <PictureFrame>
@@ -93,7 +132,13 @@ export const Vcard = () => {
             <LinkedInIcon />
           </IconButton>
         </ListItem>
-         
+
+        <ListItem>
+          <IconButton onClick={handleClickOpen}>
+            <QrCodeScannerIcon />
+          </IconButton>
+        </ListItem>
+                 
         <ListItem>
           <IconButton href='https://stackoverflow.com/users/128346/wil-moore-iii?tab=profile' target='_blank' rel='noopener noreferrer nofollow'>
             <StackedBarChartIcon />
@@ -101,13 +146,13 @@ export const Vcard = () => {
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://twitter.com/intent/follow?screen_name=DevRealEngineer' target='_blank' rel='noopener noreferrer nofollow'>
-            <TwitterIcon />
+          <IconButton href='https://www.facebook.com/coachwil.help' target='_blank' rel='noopener noreferrer nofollow'>
+            <FacebookIcon />
           </IconButton>
         </ListItem>
 
         <ListItem>
-          <IconButton href='https://www.instagram.com/wcodesmoore/' target='_blank' rel='noopener noreferrer nofollow'>
+          <IconButton href='https://www.instagram.com/coachwil.help/' target='_blank' rel='noopener noreferrer nofollow'>
             <InstagramIcon />
           </IconButton>
         </ListItem>
@@ -119,21 +164,22 @@ export const Vcard = () => {
         <div>{address}</div>
       </Contact>
 
-      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>QRCODE / VCARD</Divider>
-
-      <Link href="/index.vcf">
-        <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px' }} alt='QrCode' />
-      </Link>
-
-      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
-      <div>
-        <Tree elevation={3}>
+      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>MY SERVICES</Divider>
+      <div style= {{ color: 'white' }}>
+        <Tree sx={{ backgroundColor: 'black' }} elevation={3}>
+          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Life & Dating Coaching</Link>
+        </Tree>
+        <Tree sx={{ backgroundColor: 'gray' }} elevation={3}>
+          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Software Developer Mentorship</Link>
+        </Tree>
+        <Tree sx={{ backgroundColor: 'black' }} elevation={3}>
+          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Contract Full-Stack Development</Link>
+        </Tree>        
+        <Tree sx={{ backgroundColor: 'gray' }} elevation={3}>
           <Link href=" https://git.io/fhhRI">Resume</Link>
         </Tree>
       </div>
 
-      <Divider sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }} />
-      <div>⪼ Made with 💜 by realpolyglot.dev</div>
     </div>
   )
 }

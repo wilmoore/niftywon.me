@@ -1,18 +1,30 @@
 export const address = '1317 Edgewater Dr, Suite 3326, Orlando FL 32804'
-export const bio = 'Technical Accountability Partner for Startup Founders (Mentorship Available)! 🤙🏾💜🌈🦄.'
+export const bio = 'Life & Dating Coach, Technology Consultant, Full Stack Software Engineer'
 export const book_a_session = '//calendly.com/wilmoore'
 export const code = '20A9'
-export const company = 'Polyglot, LLC'
+export const company = 'WinnersOnly, LLC'
 export const email = 'wil.moore@wilmoore.com'
 export const escape = parseInt(code, 16)
 export const id = String.fromCodePoint(escape)
 export const logo = '//raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png'
 export const name = `Wil (${id}) Moore III`
-export const phone = '+1.303.944.4251'
-export const photo = '//cldup.com/SU6cLiLWM0.jpg'
+export const phone = '+1.727.710.9318'
+export const photo = '//user-images.githubusercontent.com/51953/199883347-910730dd-0dfb-4a92-9bc0-12001c8ec404.JPG'
+export const role = 'Founder'
+export const symbol = String.fromCodePoint(escape)
+export const website = '//wilmoore.com'
 
 export const ref = [
+  '1 Corinthians 13',
+  '1 Peter 5:2-4 NLT',
+  'Psalms 21 KJV',
+  '1 CHRONICLES 4 KJV',
+  '1 THESSALONIANS 4 KJV',
+  '2 Corinthians 11:3 KJV',
+  'Ecclesiastes 5:3 KJV',
+  'John 5:14 NLT',
   'Ephesians 1:18-23',
+  'Matthew 28:19-20',
   'Mark 10:18 ESV',
   'Matthew 17:27',
   'Matthew 22:17-18',
@@ -36,8 +48,3 @@ export const ref = [
   'Proverbs 11:22',
   'Deuteronomy 32:4 NLT',
 ]
-
-export const role = 'CTO'
-export const symbol = String.fromCodePoint(escape)
-export const title = 'Tech Mentor'
-export const website = '//wilmoore.com'

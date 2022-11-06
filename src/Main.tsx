@@ -1,5 +1,6 @@
 import { CenteredSingleColumn } from './layout/CenteredSingleColumn'
 import { code, symbol } from './id'
+import { IntroText } from './IntroText'
 import { Menu } from './Menu'
 import { MouseEvent, useState } from 'react'
 import { SideBar } from './SideBar'
@@ -33,6 +34,7 @@ export const Main = () => {
 
   return (
     <CenteredSingleColumn>
+      <IntroText />
       <WonUnicoLogo code={code} symbol={symbol} />
       <Word />
       <Menu sideBarHandler={sideBarHandler} />

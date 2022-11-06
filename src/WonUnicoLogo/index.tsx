@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
-import { Link } from './Link'
+import { Link } from '../Link'
 import { useState } from 'react'
-import { WonAudioPlayer } from './WonAudioPlayer'
+import { WonAudioPlayer } from '../WonAudioPlayer'
 
 const ViewBox = styled.div`
   position: relative;
