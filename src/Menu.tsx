@@ -1,10 +1,10 @@
 import CameraFrontIcon from '@mui/icons-material/CameraFront'
-import HelpIcon from '@mui/icons-material/Help'
+// import HelpIcon from '@mui/icons-material/Help'
 import IconButton from '@mui/material/IconButton'
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+// import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import styled from '@emotion/styled'
-import Tooltip from '@mui/material/Tooltip'
-import { Version } from './Version'
+// import Tooltip from '@mui/material/Tooltip'
+// import { Version } from './Version'
 
 const List = styled.ul`
   list-style-type: none;
