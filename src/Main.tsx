@@ -7,14 +7,26 @@ import { SideBar } from './SideBar'
 import { WonUnicoLogo } from './WonUnicoLogo'
 import { Word } from './Word'
 
+/*
+const hashToPage: Record<string, string> = {
+  vcard: 'vcard',
+  me: 'vcard',
+};
+*/
+
+const hashToPage: { [hashValue: string]: pageName<string>} = {
+  vcard: 'vcard',
+  me: 'vcard',
+};
+
 const openTo = () => {
   const { hash } = window.location
 
   if (hash.length) {
-    const hashValue = hash.slice(1).toLowerCase()
+    const hashValue: string = hash.slice(1).toLowerCase()
 
-    return (hashValue === 'vcard')
-      ? hashValue
+    return (hashValue in hashToPage)
+      ? hashToPage[hashValue]
       : ''
   }
 
