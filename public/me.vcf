@@ -1,0 +1,28 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:individual
+N;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Moore;Wil;;Mr.;III
+FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Wil (₩) Moore III
+ORG:WinnersOnly, LLC
+TITLE:Founder
+ROLE:Life & Dating Coach, Technology Consultant, Full Stack Software Engineer
+NOTE;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Hello. I'm a\nLife, Dating, & Technology Coach
+PHOTO;ENCODING=b;TYPE=JPEG://user-images.githubusercontent.com/51953/199883347-910730dd-0dfb-4a92-9bc0-12001c8ec404.JPG
+X-SOCIALPROFILE;type=linkedin;x-user=wilmoore:https://www.linkedin.com/in/wilmoore
+X-SOCIALPROFILE;type=Instagram;x-user=coachwil.help:https://www.instagram.com/coachwil.help
+X-SOCIALPROFILE;type=twitter;x-user=wcodesmoore:https://twitter.com/intent/follow?screen_name=wcodesmoore
+X-SOCIALPROFILE;type=stackoverflow;x-user=128346/wil-moore-iii:https://stackoverflow.com/users/128346/wil-moore-iii?tab=profile
+X-SOCIALPROFILE;type=facebook;x-user=coachwil.help:https://www.facebook.com/coachwil.help
+X-SOCIALPROFILE;type=github;x-user=wilmoore:https://github.com/wilmoore
+TEL;VALUE=uri;PREF=1;TYPE="cell,voice,text";mobile:+1-727-710-9318
+ADR;TYPE=work;Main="1317 Edgewater Dr, Suite 3326
+Orlando, FL 32804
+United States of America":;;1317 Edgewater Dr, Suite 3326;Orlando; FL 32804;United States of America
+EMAIL:wil.moore@wilmoore.com
+URL;TYPE=HOME;website:https://wilmoore.com
+URL;TYPE=LINK;Life and/or Dating Coaching:https://calendly.com/wilmoore/30-minute-discovery-call
+URL;TYPE=LINK;Break Into Software Development Coaching:https://calendly.com/wilmoore/30-minute-discovery-call
+URL;TYPE=LINK;Full-Stack Development Consulting:https://calendly.com/wilmoore/30-minute-discovery-call
+URL;TYPE=LINK;Resume:https://git.io/fhhRI
+REV:20221113T050047664Z
+END:VCARD

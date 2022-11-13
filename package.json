@@ -25,7 +25,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "qrencode": "sed '/^PHOTO/d' ./public/index.vcf | qrencode -m 9 -o ./public/index.vcf.qrcode.png",
+    "generate:qrcode": "sed '/^PHOTO/d' ./public/me.vcf | qrencode -m 9 -o ./public/me.vcf.qrcode.png",
+    "generate:vcard": "npx ts-node ./cli/create-vcard.ts | sed -n '/^BEGIN/,/^END/p' > public/me.vcf",
     "tunnel": "ngrok http 3000",
     "start": "react-scripts start",
     "build": "react-scripts build",

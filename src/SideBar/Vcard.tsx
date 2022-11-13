@@ -96,8 +96,8 @@ export const Vcard = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle sx={{ margin: 'auto' }}>{"Scan To Save Contact To Phone"}</DialogTitle>
-        <Link href="/index.vcf">
-          <img src='/index.vcf.qrcode.png' style={{ width: '300px', height: '300px', padding: '1.25em' }} alt='QrCode' />
+        <Link href="/me.vcf">
+          <img src='/me.vcf.qrcode.png' style={{ width: '300px', height: '300px', padding: '1.25em' }} alt='QrCode' />
         </Link>
       </Dialog>
 
