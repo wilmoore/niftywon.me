@@ -12,7 +12,7 @@ const ELEMENT_ID = 'audio-element-won'
 
 export const WonAudioPlayer = ({ isPlaying, onPlayPause }: Props) => {
   const control = popz(`#${ELEMENT_ID}`)
-  const sources = anthem.CHANEL
+  const sources = anthem.LIGHT_IT_UP
 
   return (
     <>
