@@ -1,4 +1,5 @@
-import contact from '../public/me.json';
+// import contact from '../public/me.json';
+import contact from '../src/me.json';
 import {
   header,
   footer,

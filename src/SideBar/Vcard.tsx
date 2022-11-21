@@ -8,7 +8,7 @@ import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
 import TodayIcon from '@mui/icons-material/Today'
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { address, bio, email, name, phone, photo, role } from '../id'
+import { address, bio, email, name, phone, photo, /* role */ } from '../id'
 import { Avatar, Dialog, DialogTitle, Divider, Paper, Slide } from '@mui/material'
 import { Link } from '../Link'
 
@@ -36,11 +36,12 @@ const Name = styled.span`
   font-size: 2.1em;
   padding-top: 3vh;
 `
-
+/*
 const Title = styled.div`
   padding-top: 1vh;
   font-weight: bold;
 `
+*/
 
 const Bio = styled.div`
   font-size: 0.9em;
@@ -102,9 +103,11 @@ export const Vcard = () => {
       </Dialog>
 
       <Name>{name}</Name>
+      {/*
       <Title>
         {role} @ <Link href="https://search.sunbiz.org/Inquiry/CorporationSearch/ConvertTiffToPDF?storagePath=COR%5C2022%5C1101%5C60890336.tif&documentNumber=L22000466252">WinnersOnly, LLC</Link>
       </Title>
+      */}
       <Bio>{bio}</Bio>
       <PictureFrame>
         <Avatar

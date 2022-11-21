@@ -34,8 +34,9 @@ const openTo = () => {
 }
 
 export const Main = () => {
-  const [isOpen, setIsOpen] = useState(Boolean(openTo().length))
-  const [page, setPage] = useState(openTo())
+  // const [isOpen, setIsOpen] = useState(Boolean(openTo().length))
+  const [isOpen, setIsOpen] = useState(true)
+  const [page, setPage] = useState(openTo() || hashToPage.vcard)
 
   const sideBarHandler = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()

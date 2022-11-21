@@ -1,5 +1,8 @@
+import contact from './me.json';
+
 export const address = '1317 Edgewater Dr, Suite 3326, Orlando FL 32804'
-export const bio = 'Life & Dating Coach, Technology Consultant, Full Stack Software Engineer'
+// export const bio = 'Life & Dating Coach, Technology Consultant, Full Stack Software Engineer'
+export const bio = contact.bio
 export const book_a_session = '//calendly.com/wilmoore'
 export const code = '20A9'
 export const company = 'WinnersOnly, LLC'
