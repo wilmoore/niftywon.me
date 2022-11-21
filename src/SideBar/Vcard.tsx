@@ -4,28 +4,32 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import IconButton from '@mui/material/IconButton'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import TwitterIcon from '@mui/icons-material/Twitter'
 import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
-import TodayIcon from '@mui/icons-material/Today'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { address, bio, email, name, phone, photo, /* role */ } from '../id'
 import { Avatar, Dialog, DialogTitle, Divider, Paper, Slide } from '@mui/material'
 import { Link } from '../Link'
+import Button from '@mui/material/Button';
+
+import ScheduleIcon from '@mui/icons-material/Schedule';
+import SchoolIcon from '@mui/icons-material/School';
+import GavelIcon from '@mui/icons-material/Gavel';
 
 import { TransitionProps } from '@mui/material/transitions';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 
-const Tree = styled(Paper)`
-  height: 10vh;
-  margin-bottom: 3vh;
-  padding: 0 3vh;
-  line-height: 3vh;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3vw;
-`
+import contact from '../me.json'
+
+const profileTypeToIcon: Record<string, any> = {
+  linkedin: LinkedInIcon,
+  github: GitHubIcon,
+  instagram: InstagramIcon,
+  twitter: TwitterIcon,
+  stackoverflow: StackedBarChartIcon,
+  facebook: FacebookIcon,
+};
 
 const Contact = styled.div`
   padding-bottom: 3vh;
@@ -36,12 +40,6 @@ const Name = styled.span`
   font-size: 2.1em;
   padding-top: 3vh;
 `
-/*
-const Title = styled.div`
-  padding-top: 1vh;
-  font-weight: bold;
-`
-*/
 
 const Bio = styled.div`
   font-size: 0.9em;
@@ -102,12 +100,13 @@ export const Vcard = () => {
         </Link>
       </Dialog>
 
+      <div>
+        <IconButton onClick={handleClickOpen}>
+          <QrCodeScannerIcon />
+        </IconButton>
+      </div>
+
       <Name>{name}</Name>
-      {/*
-      <Title>
-        {role} @ <Link href="https://search.sunbiz.org/Inquiry/CorporationSearch/ConvertTiffToPDF?storagePath=COR%5C2022%5C1101%5C60890336.tif&documentNumber=L22000466252">WinnersOnly, LLC</Link>
-      </Title>
-      */}
       <Bio>{bio}</Bio>
       <PictureFrame>
         <Avatar
@@ -118,47 +117,17 @@ export const Vcard = () => {
       </PictureFrame>
 
       <List>
-        <ListItem>
-          <IconButton href='https://calendly.com/wilmoore' target='_blank' rel='noopener noreferrer nofollow'>
-            <TodayIcon />
-          </IconButton>
-        </ListItem>
+        {contact.profiles.map((profile) => {
+          const IconComponent = profileTypeToIcon[profile.type];
 
-        <ListItem>
-          <IconButton href='https://github.com/wilmoore/' target='_blank' rel='noopener noreferrer nofollow'>
-            <GitHubIcon />
-          </IconButton>
-        </ListItem>
-
-        <ListItem>
-          <IconButton href='https://linkedin.com/in/wilmoore' target='_blank' rel='noopener noreferrer nofollow'>
-            <LinkedInIcon />
-          </IconButton>
-        </ListItem>
-
-        <ListItem>
-          <IconButton onClick={handleClickOpen}>
-            <QrCodeScannerIcon />
-          </IconButton>
-        </ListItem>
-                 
-        <ListItem>
-          <IconButton href='https://stackoverflow.com/users/128346/wil-moore-iii?tab=profile' target='_blank' rel='noopener noreferrer nofollow'>
-            <StackedBarChartIcon />
-          </IconButton>
-        </ListItem>
-
-        <ListItem>
-          <IconButton href='https://www.facebook.com/coachwil.help' target='_blank' rel='noopener noreferrer nofollow'>
-            <FacebookIcon />
-          </IconButton>
-        </ListItem>
-
-        <ListItem>
-          <IconButton href='https://www.instagram.com/coachwil.help/' target='_blank' rel='noopener noreferrer nofollow'>
-            <InstagramIcon />
-          </IconButton>
-        </ListItem>
+          return (
+            <ListItem>
+              <IconButton href={profile.uri} target='_blank' rel='noopener noreferrer nofollow'>
+                <IconComponent />
+              </IconButton>
+            </ListItem>
+          )
+        })}
       </List>
 
       <Contact>
@@ -167,22 +136,19 @@ export const Vcard = () => {
         <div>{address}</div>
       </Contact>
 
-      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>MY SERVICES</Divider>
-      <div style= {{ color: 'white' }}>
-        <Tree sx={{ backgroundColor: 'black' }} elevation={3}>
-          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Life & Dating Coaching</Link>
-        </Tree>
-        <Tree sx={{ backgroundColor: 'gray' }} elevation={3}>
-          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Software Developer Mentorship</Link>
-        </Tree>
-        <Tree sx={{ backgroundColor: 'black' }} elevation={3}>
-          <Link href=" https://calendly.com/wilmoore/30-minute-discovery-call">Contract Full-Stack Development</Link>
-        </Tree>        
-        <Tree sx={{ backgroundColor: 'gray' }} elevation={3}>
-          <Link href=" https://git.io/fhhRI">Resume</Link>
-        </Tree>
-      </div>
+      <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
 
+      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<SchoolIcon />} href=" https://git.io/fhhRI" target="_blank">
+        Resume
+      </Button>
+
+      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<ScheduleIcon />} href="https://calendly.com/wilmoore/30-minute-discovery-call" target="_blank">
+        Junior Developer Mentorship
+      </Button>
+
+      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<GavelIcon />} href="https://calendly.com/wilmoore/30-minute-discovery-call" target="_blank">
+        Contract Full-Stack Development
+      </Button>
     </div>
   )
 }

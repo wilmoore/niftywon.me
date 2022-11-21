@@ -7,14 +7,7 @@ import { SideBar } from './SideBar'
 import { WonUnicoLogo } from './WonUnicoLogo'
 import { Word } from './Word'
 
-/*
 const hashToPage: Record<string, string> = {
-  vcard: 'vcard',
-  me: 'vcard',
-};
-*/
-
-const hashToPage: { [hashValue: string]: pageName<string>} = {
   vcard: 'vcard',
   me: 'vcard',
 };

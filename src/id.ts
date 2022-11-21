@@ -1,21 +1,19 @@
 import contact from './me.json';
 
-export const address = '1317 Edgewater Dr, Suite 3326, Orlando FL 32804'
-// export const bio = 'Life & Dating Coach, Technology Consultant, Full Stack Software Engineer'
+export const address = `${contact.street}, ${contact.street2}, ${contact.city} ${contact.state} ${contact.zip}`
 export const bio = contact.bio
-export const book_a_session = '//calendly.com/wilmoore'
-export const code = '20A9'
-export const company = 'WinnersOnly, LLC'
-export const email = 'wil.moore@wilmoore.com'
+export const code = contact.id
+export const company = contact.company
+export const email = contact.email
 export const escape = parseInt(code, 16)
 export const id = String.fromCodePoint(escape)
-export const logo = '//raw.githubusercontent.com/wilmoore/wonlogo.svg/main/index.png'
-export const name = `Wil (${id}) Moore III`
-export const phone = '+1.727.710.9318'
-export const photo = '//user-images.githubusercontent.com/51953/199883347-910730dd-0dfb-4a92-9bc0-12001c8ec404.JPG'
-export const role = 'Founder'
+export const logo = contact.avatar
+export const name = contact.displayName
+export const phone = contact.phones[0].uri
+export const photo = contact.largeAvatar
+export const role = contact.jobTitle
 export const symbol = String.fromCodePoint(escape)
-export const website = '//wilmoore.com'
+export const website = contact.homepage
 
 export const ref = [
   '1 Corinthians 13',

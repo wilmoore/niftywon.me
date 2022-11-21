@@ -12,7 +12,7 @@
   "country": "United States of America",
   "countryCode": "us",
   "bio": "Technical Writer, Full Stack Software Engineer Specializing in NodeJS APIs, TypeScript, React & React Native, SQL, DevOps, AWS, Azure, & ElasticSearch. Author of selectn.js.",
-  "note": "Hello. I'm a\nLife, Dating, & Technology Coach",
+  "note": "Technical Writer, Full Stack Software Engineer Specializing in NodeJS APIs, TypeScript, React & React Native, SQL, DevOps, AWS, Azure, & ElasticSearch. Author of selectn.js.",
   "street": "1317 Edgewater Dr",
   "street2": "Suite 3326",
   "city": "Orlando",
@@ -25,7 +25,7 @@
   "phones": [
     {
       "label": "mobile",
-      "uri": "+1-727-710-9318"
+      "uri": "+1 (727) 710-9318"
     }
   ],
   "profiles": [
@@ -35,9 +35,9 @@
       "uri": "https://www.linkedin.com/in/wilmoore"
     },
     {
-      "user": "coachwil.help",
-      "type": "Instagram",
-      "uri": "https://www.instagram.com/coachwil.help"
+      "user": "wilmooreiii",
+      "type": "instagram",
+      "uri": "https://www.instagram.com/wilmooreiii"
     },
     {
       "user": "wcodesmoore",
@@ -50,9 +50,9 @@
       "uri": "https://stackoverflow.com/users/128346/wil-moore-iii?tab=profile"
     },
     {
-      "user": "coachwil.help",
+      "user": "wilmooreiii",
       "type": "facebook",
-      "uri": "https://www.facebook.com/coachwil.help"
+      "uri": "https://www.facebook.com/wilmooreiii"
     },
     {
       "user": "wilmoore",
@@ -62,20 +62,16 @@
    ],
   "links": [
     {
-      "label": "Life and/or Dating Coaching",
-      "uri": "https://calendly.com/wilmoore/30-minute-discovery-call"
+      "label": "Resume",
+      "uri": "https://git.io/fhhRI"
     },
     {
-      "label": "Break Into Software Development Coaching",
+      "label": "Junior Software Developer Mentorship",
       "uri": "https://calendly.com/wilmoore/30-minute-discovery-call"
     },
     {
       "label": "Full-Stack Development Consulting",
       "uri": "https://calendly.com/wilmoore/30-minute-discovery-call"
-    },
-    {
-      "label": "Resume",
-      "uri": "https://git.io/fhhRI"
     }
   ]
 }

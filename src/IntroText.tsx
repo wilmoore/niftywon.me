@@ -1,12 +1,11 @@
 import styled from '@emotion/styled'
 
 const IntroTextContainer = styled.div`
-  max-width: 80%;
-  margin: 1.5%;
+  max-width: 90%;
+  padding-top: 8%;
   font-family: Cambon;
-  font-weight: 800;
-  font-size: 52px;
-  line-height: 60px;
+  font-weight: 600;
+  font-size: 42px;
   color: #fff;
 `
 
@@ -22,7 +21,7 @@ export const IntroText = () => {
     <IntroTextContainer>
         Hello. I'm a&nbsp;
         <div className="text-highlight">
-            <GradedText>Life, Dating, &amp; Technology Coach</GradedText>
+            <GradedText>Technical Writer & Full Stack Software Engineer</GradedText>
         </div>
     </IntroTextContainer>
   )
