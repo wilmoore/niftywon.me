@@ -9,7 +9,7 @@ import StackedBarChartIcon from '@mui/icons-material/StackedBarChart'
 import styled from '@emotion/styled'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { address, bio, email, name, phone, photo, /* role */ } from '../id'
-import { Avatar, Dialog, DialogTitle, Divider, Paper, Slide } from '@mui/material'
+import { Avatar, Dialog, DialogTitle, Divider, Slide } from '@mui/material'
 import { Link } from '../Link'
 import Button from '@mui/material/Button';
 
