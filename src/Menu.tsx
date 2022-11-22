@@ -3,6 +3,7 @@ import CameraFrontIcon from '@mui/icons-material/CameraFront'
 import IconButton from '@mui/material/IconButton'
 // import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import styled from '@emotion/styled'
+import { Divider } from '@mui/material'
 // import Tooltip from '@mui/material/Tooltip'
 // import { Version } from './Version'
 
@@ -22,10 +23,12 @@ interface MenuProps {
 
 export const Menu = ({ sideBarHandler }: MenuProps) => {
   return (
+    <>
+    <Divider />
     <List>
       <ListItem>
         <IconButton onClick={sideBarHandler} data-sidebar-page='vcard' aria-label='vcard' disabled={false}>
-          <CameraFrontIcon />
+          <CameraFrontIcon sx={{ fontSize: '3.25rem' }} />
         </IconButton>
       </ListItem>
   {/*
@@ -47,6 +50,7 @@ export const Menu = ({ sideBarHandler }: MenuProps) => {
       </ListItem>
 */}
     </List>
+    </>
   )
 }
 
