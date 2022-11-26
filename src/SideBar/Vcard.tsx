@@ -19,6 +19,8 @@ import GavelIcon from '@mui/icons-material/Gavel';
 
 import { TransitionProps } from '@mui/material/transitions';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
+import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+import RssFeedIcon from '@mui/icons-material/RssFeed';
 
 import contact from '../me.json'
 
@@ -29,6 +31,7 @@ const profileTypeToIcon: Record<string, any> = {
   twitter: TwitterIcon,
   stackoverflow: StackedBarChartIcon,
   facebook: FacebookIcon,
+  medium: RssFeedIcon,
 };
 
 const Contact = styled.div`
@@ -118,7 +121,7 @@ export const Vcard = () => {
 
       <List>
         {contact.profiles.map((profile) => {
-          const IconComponent = profileTypeToIcon[profile.type];
+          const IconComponent = profileTypeToIcon[profile.type] ?? HelpCenterIcon;
 
           return (
             <ListItem>

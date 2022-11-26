@@ -21,7 +21,7 @@ export const IntroText = () => {
     <IntroTextContainer>
         Hello. I'm a&nbsp;
         <div className="text-highlight">
-            <GradedText>Technical Writer & Full Stack Software Engineer</GradedText>
+            <GradedText>Technical Writer & Full Stack Software Engineer</GradedText><span>&nbsp;💜</span>
         </div>
     </IntroTextContainer>
   )
