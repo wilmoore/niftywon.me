@@ -13,18 +13,17 @@ import { Avatar, Dialog, DialogTitle, Divider, Slide } from '@mui/material'
 import { Link } from '../Link'
 import Button from '@mui/material/Button';
 
-import ScheduleIcon from '@mui/icons-material/Schedule';
-import SchoolIcon from '@mui/icons-material/School';
-import GavelIcon from '@mui/icons-material/Gavel';
-
 import { TransitionProps } from '@mui/material/transitions';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
+import { SoundCloudIcon } from '../icon/SoundCloudIcon'
 
 import contact from '../me.json'
 
+// https://mui.com/material-ui/material-icons/
 const profileTypeToIcon: Record<string, any> = {
+  soundcloud: SoundCloudIcon,
   linkedin: LinkedInIcon,
   github: GitHubIcon,
   instagram: InstagramIcon,
@@ -63,7 +62,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   display: inline;
-  padding: 0.3em;
+  padding: 0.2em;
 `
 
 
@@ -141,17 +140,13 @@ export const Vcard = () => {
 
       <Divider textAlign="left" sx={{ paddingBottom: '3vh', fontSize: '0.8em', fontWeight: 'bold' }}>LINKS</Divider>
 
-      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<SchoolIcon />} href=" https://git.io/fhhRI" target="_blank">
-        Resume
-      </Button>
-
-      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<ScheduleIcon />} href="https://calendly.com/wilmoore/30-minute-discovery-call" target="_blank">
-        Junior Developer Mentorship
-      </Button>
-
-      <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" startIcon={<GavelIcon />} href="https://calendly.com/wilmoore/30-minute-discovery-call" target="_blank">
-        Contract Full-Stack Development
-      </Button>
+      {contact.links.map((link) => {
+        return (
+          <Button sx={{ marginBottom: '1em', justifyContent: 'left' }} fullWidth variant="text" size="large" href={link.uri} target="_blank">
+            {link.label}
+          </Button>
+        )
+      })}
     </div>
   )
 }

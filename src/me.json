@@ -63,6 +63,11 @@
       "user": "wilmoore",
       "type": "github",
       "uri": "https://github.com/wilmoore"
+    },
+    {
+      "user": "wonmo",
+      "type": "soundcloud",
+      "uri": "https://soundcloud.com/wonmo"
     }
    ],
   "links": [
@@ -77,6 +82,10 @@
     {
       "label": "Full-Stack Development Consulting",
       "uri": "https://calendly.com/wilmoore/30-minute-discovery-call"
+    },
+    {
+      "label": "Album: Won Mo' Gin (Soundcloud)",
+      "uri": "https://soundcloud.com/wonmo/sets/wonmogin"
     }
   ]
 }
